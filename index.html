@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OpenHouse 3D — Turn Listing Photos into 3D Walkthrough Videos with Blender</title>
+<meta name="description" content="Open-source toolkit that rebuilds a house as a 3D model from its real-estate listing photos and renders a cinematic walkthrough video with headless Blender: photo camera solving, procedural modeling, virtual staging and photo-vs-render comparison films.">
+<meta name="keywords" content="listing photos to 3D, 3D walkthrough video, real estate virtual tour, house tour video, Blender, bpy, Cycles, archviz, architectural visualization, 3D reconstruction from photos, virtual staging, camera calibration">
+<meta name="author" content="Yunfan Ye">
+<link rel="canonical" href="https://yunfanye.github.io/openhouse-3d/">
+<meta name="theme-color" content="#101816">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="OpenHouse 3D">
+<meta property="og:title" content="OpenHouse 3D — Listing Photos to 3D Walkthrough Videos">
+<meta property="og:description" content="Rebuild a house in 3D from its real-estate listing photos and render a cinematic walkthrough video with headless Blender. Open source, MIT.">
+<meta property="og:url" content="https://yunfanye.github.io/openhouse-3d/">
+<meta property="og:image" content="https://yunfanye.github.io/openhouse-3d/media/social-preview.jpg">
+<meta property="og:image:width" content="1280">
+<meta property="og:image:height" content="640">
+<meta property="og:image:alt" content="Side-by-side 3D walkthrough of 13695 Stanford Drive rebuilt from listing photos: Opus 5.5 vs Astra">
+<meta property="og:video" content="https://yunfanye.github.io/openhouse-3d/media/stanford-side-by-side-720p.mp4">
+<meta property="og:video:type" content="video/mp4">
+<meta property="og:video:width" content="1280">
+<meta property="og:video:height" content="658">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="OpenHouse 3D — Listing Photos to 3D Walkthrough Videos">
+<meta name="twitter:description" content="Rebuild a house in 3D from its listing photos and render a cinematic walkthrough with headless Blender.">
+<meta name="twitter:image" content="https://yunfanye.github.io/openhouse-3d/media/social-preview.jpg">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "OpenHouse 3D",
+      "description": "Turn real-estate listing photos into a procedural 3D house model and a rendered walkthrough video with headless Blender.",
+      "url": "https://yunfanye.github.io/openhouse-3d/",
+      "codeRepository": "https://github.com/yunfanye/openhouse-3d",
+      "programmingLanguage": "Python",
+      "runtimePlatform": "Blender 5.2",
+      "license": "https://opensource.org/licenses/MIT",
+      "author": {"@type": "Person", "name": "Yunfan Ye"},
+      "keywords": "listing photos, 3D walkthrough, virtual tour, Blender, Cycles, archviz, 3D reconstruction, virtual staging"
+    },
+    {
+      "@type": "VideoObject",
+      "name": "13695 Stanford Drive: listing photos to 3D walkthrough, side by side (Opus 5.5 vs Astra)",
+      "description": "Two 3D reconstructions of the same house, rebuilt from 32 real-estate listing photos and rendered as cinematic walkthroughs, with the original listing photo and matching render under each film.",
+      "thumbnailUrl": "https://yunfanye.github.io/openhouse-3d/media/stanford-side-by-side.jpg",
+      "uploadDate": "2026-09-25",
+      "duration": "PT1M6S",
+      "contentUrl": "https://yunfanye.github.io/openhouse-3d/media/stanford-side-by-side-720p.mp4"
+    }
+  ]
+}
+</script>
+<style>
+  :root { --bg:#101816; --fg:#f3efe6; --muted:#b9b3a7; --accent:#e07a5f; --link:#8ab4f8; --card:#18221f; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  main { max-width: 1040px; margin: 0 auto; padding: 48px 20px 64px; }
+  h1 { font-size: clamp(30px, 5vw, 48px); line-height: 1.15; margin: 0 0 12px; letter-spacing: -0.01em; }
+  h1 span { color: var(--accent); }
+  h2 { font-size: 24px; margin: 48px 0 12px; }
+  p.lead { font-size: 20px; color: var(--muted); margin: 0 0 28px; }
+  a { color: var(--link); }
+  video { width: 100%; border-radius: 10px; background:#000; display:block; }
+  .caption { color: var(--muted); font-size: 15px; margin-top: 10px; }
+  .buttons { display:flex; flex-wrap:wrap; gap:12px; margin: 24px 0 0; }
+  .buttons a { text-decoration:none; padding:10px 18px; border-radius:8px; background:var(--card); color:var(--fg); border:1px solid #2c3a35; }
+  .buttons a.primary { background: var(--accent); border-color: var(--accent); color:#111; font-weight:600; }
+  ol li, ul li { margin: 6px 0; }
+  table { border-collapse: collapse; width: 100%; font-size: 15px; }
+  th, td { text-align:left; padding: 8px 10px; border-bottom: 1px solid #2c3a35; vertical-align: top; }
+  pre { background: var(--card); padding: 16px; border-radius: 8px; overflow-x: auto; font-size: 14px; }
+  footer { color: var(--muted); font-size: 14px; margin-top: 56px; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>OpenHouse 3D: <span>listing photos</span> to 3D walkthrough videos</h1>
+    <p class="lead">An open-source Blender toolkit that rebuilds a house as a 3D model from its real-estate
+      listing photos, then renders a cinematic walkthrough video, photo-matched stills and a
+      photo-vs-render comparison film. It runs headless.</p>
+  </header>
+
+  <section aria-label="Demo video">
+    <video controls playsinline preload="metadata" poster="media/stanford-side-by-side.jpg">
+      <source src="media/stanford-side-by-side-720p.mp4" type="video/mp4">
+      <a href="https://github.com/yunfanye/openhouse-3d/releases/tag/v0.1.0">Download the walkthrough video</a>.
+    </video>
+    <p class="caption">13695 Stanford Drive, Carmel, Indiana, rebuilt from its 32 listing photos.
+      Left, <b>Opus 5.5</b>: the reconstruction in the repository, built with Claude Opus 5.5 using this toolkit.
+      Right, <b>Astra</b>: an independent reconstruction of the same listing. Under each film: the original
+      listing photo and the matching virtually staged render.
+      <a href="https://github.com/yunfanye/openhouse-3d/releases/tag/v0.1.0">Full resolution (3856 × 1980)</a>.</p>
+    <div class="buttons">
+      <a class="primary" href="https://github.com/yunfanye/openhouse-3d">View on GitHub</a>
+      <a href="https://github.com/yunfanye/openhouse-3d#start-with-a-small-render">Quick start</a>
+      <a href="https://github.com/yunfanye/openhouse-3d/releases">Releases</a>
+    </div>
+  </section>
+
+  <section>
+    <h2>What it does</h2>
+    <table>
+      <tr><th>You provide</th><th>You get</th></tr>
+      <tr><td>The photos from a real-estate listing: exterior, drone aerials, rooms</td><td>A procedural 3D model of the house, lot and street in Blender</td></tr>
+      <tr><td>A few known dimensions (optional)</td><td>Renders from every listing photo's own camera and an offline photo-vs-render gallery</td></tr>
+      <tr><td>Your reading of rooms, levels and openings, or an AI coding agent's</td><td>A continuous cinematic walkthrough video (1080p24, Cycles), with titles and music</td></tr>
+      <tr><td></td><td>A synchronized comparison movie: the film above matching photo/render pairs</td></tr>
+    </table>
+  </section>
+
+  <section>
+    <h2>How it works</h2>
+    <ol>
+      <li><b>Solve the photo cameras.</b> Point and line solvers recover each listing photo's camera, including
+        perspective-corrected (shifted-lens) photos and drone aerials. Several photos are solved together
+        with unknown plan dimensions.</li>
+      <li><b>Write the plan.</b> Levels, rooms, walls and openings in one coordinate system, validated without Blender.</li>
+      <li><b>Build procedurally in bpy.</b> Lap siding and brick as geometry, windows, doors, stairs, roofs and
+        gutters, kitchens, baths, furniture, soft goods, trees, lawns, pavers, water and neighbouring houses.</li>
+      <li><b>Compare against every photo.</b> Render each listing view, overlay edges, fix the plan rather than the camera.</li>
+      <li><b>Film it.</b> Author a timed camera route, audit clearance and pan speed, and render a packed,
+        fingerprinted scene with resumable chunked Cycles jobs on CPU, Metal, OptiX, CUDA, HIP or oneAPI.</li>
+      <li><b>Deliver.</b> Titles, music edit, temporal denoising, gallery, frame-accurate comparison video and checksums.</li>
+    </ol>
+    <p>It is a modeling toolkit, not a one-click service or photogrammetry. Hidden geometry is inferred,
+      and a reconstruction is not a measured survey.</p>
+  </section>
+
+  <section>
+    <h2>Example houses</h2>
+    <ul>
+      <li><b>Stanford</b>, Carmel IN: 32 photos, photo-solved cameras, a ~66 s golden-hour cinematic and an 80 s route-matched walkthrough.</li>
+      <li><b>Webster</b>, Palo Alto CA: a 64 s continuous walkthrough and a synchronized comparison of 31 photos.</li>
+      <li><b>Walsh</b>, Atherton CA: a modern travertine villa with 29 photo-matched stills and a 78 s long take.</li>
+      <li><b>Alpine</b>, Beverly Hills CA: an experimental Georgian estate.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Try it</h2>
+<pre><code>git clone https://github.com/yunfanye/openhouse-3d.git
+cd openhouse-3d
+python3 -m venv .venv &amp;&amp; . .venv/bin/activate
+python -m pip install -e '.[dev]'
+python tools/new_house.py my_house --title "My house"
+blender -b --python-exit-code 1 --python run.py -- \
+  --house my_house --cam hero --samples 16 --scale 25 --no-polish --device CPU</code></pre>
+    <p>Requires Blender 5.2 and Python 3.9+. See the <a href="https://github.com/yunfanye/openhouse-3d#readme">README</a>
+      and the <a href="https://github.com/yunfanye/openhouse-3d/blob/main/docs/workflow.md">workflow guide</a>.</p>
+  </section>
+
+  <footer>
+    Code and documentation: MIT. Listing photographs and media that include them keep their own rights;
+    see <a href="https://github.com/yunfanye/openhouse-3d/blob/main/ASSET_LICENSES.md">asset provenance</a> and the
+    <a href="https://github.com/yunfanye/openhouse-3d/blob/main/PHOTO_REMOVAL.md">photo removal policy</a>.
+  </footer>
+</main>
+</body>
+</html>

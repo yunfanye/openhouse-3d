@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+  <url>
+    <loc>https://yunfanye.github.io/openhouse-3d/</loc>
+    <lastmod>2026-09-25</lastmod>
+    <video:video>
+      <video:thumbnail_loc>https://yunfanye.github.io/openhouse-3d/media/stanford-side-by-side.jpg</video:thumbnail_loc>
+      <video:title>13695 Stanford Drive: listing photos to 3D walkthrough, side by side</video:title>
+      <video:description>Two 3D reconstructions of the same house, rebuilt from 32 real-estate listing photos and rendered as cinematic walkthroughs in Blender.</video:description>
+      <video:content_loc>https://yunfanye.github.io/openhouse-3d/media/stanford-side-by-side-720p.mp4</video:content_loc>
+      <video:duration>66</video:duration>
+    </video:video>
+  </url>
+</urlset>
