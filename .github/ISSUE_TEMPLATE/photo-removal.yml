@@ -1,0 +1,22 @@
+name: Photo removal
+description: Request removal of reference images from the house examples.
+title: "Photo removal: "
+body:
+  - type: markdown
+    attributes:
+      value: Reference images will be removed on request. Please identify the affected files below.
+  - type: textarea
+    id: images
+    attributes:
+      label: Images to remove
+      description: List the repository file paths or links to the images.
+      placeholder: houses/webster/photos/00.jpg
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Additional details
+      description: Optional context, source links, or attribution details.
+    validations:
+      required: false

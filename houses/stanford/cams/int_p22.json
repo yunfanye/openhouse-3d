@@ -1,0 +1,473 @@
+{
+ "_note": "Photo 22 (the primary walk-in closet under the left front gable, from its door), tools/intcam_solve.py, level camera. Held: the house's left wall x 0.15 (far wall), the front wall y 1.37 (YB0_UP + EWT) with the left-gable window's -X opening edge (plan lg_win x 1.19, prior; it is the white return at u 94 - the window is left of it, nearer the camera), ceiling 5.20 / floor 2.84. Unknowns: the closet's back (rod) wall ybk, the corner chase (face x cx, side y cy1), baseboard. Without the window edge the camera x is ill-conditioned (2.1 with shift 0.1 ... 2.8 with shift 0); with it the zero-shift solution holds.",
+ "unknowns": {
+  "zc": 5.2,
+  "bb": 0.09,
+  "cy1": 2.03,
+  "cx": 0.33,
+  "wx0": 1.195,
+  "ybk": 3.84
+ },
+ "priors": {
+  "zc": [
+   5.2,
+   0.01
+  ],
+  "bb": [
+   0.09,
+   0.02
+  ],
+  "wx0": [
+   1.195,
+   0.03
+  ]
+ },
+ "photos": {
+  "22": {
+   "size": [
+    1536,
+    1024
+   ],
+   "model": "level",
+   "photo": "../photos/22.jpg",
+   "init": {
+    "loc": [
+     2.6,
+     2.8,
+     3.9
+    ],
+    "yaw": -70,
+    "lens": 15
+   },
+   "priors": {
+    "shift_x": [
+     0,
+     0.03
+    ]
+   },
+   "points": [],
+   "lines": [
+    [
+     808.7,
+     450,
+     [
+      0.15,
+      "ybk",
+      2.84
+     ],
+     [
+      0.15,
+      "ybk",
+      5.2
+     ],
+     "far-right corner"
+    ],
+    [
+     812.4,
+     222.9,
+     [
+      0.15,
+      "ybk",
+      2.84
+     ],
+     [
+      0.15,
+      "ybk",
+      5.2
+     ],
+     "far-right corner (ceiling lines meet)"
+    ],
+    [
+     380,
+     124.4,
+     [
+      0.15,
+      1,
+      "zc"
+     ],
+     [
+      0.15,
+      5,
+      "zc"
+     ],
+     "far wall ceiling"
+    ],
+    [
+     450,
+     139.8,
+     [
+      0.15,
+      1,
+      "zc"
+     ],
+     [
+      0.15,
+      5,
+      "zc"
+     ],
+     "far wall ceiling"
+    ],
+    [
+     520,
+     156.3,
+     [
+      0.15,
+      1,
+      "zc"
+     ],
+     [
+      0.15,
+      5,
+      "zc"
+     ],
+     "far wall ceiling"
+    ],
+    [
+     700,
+     199.0,
+     [
+      0.15,
+      1,
+      "zc"
+     ],
+     [
+      0.15,
+      5,
+      "zc"
+     ],
+     "far wall ceiling"
+    ],
+    [
+     920,
+     143.4,
+     [
+      -1,
+      "ybk",
+      "zc"
+     ],
+     [
+      4,
+      "ybk",
+      "zc"
+     ],
+     "back wall ceiling"
+    ],
+    [
+     960,
+     114.6,
+     [
+      -1,
+      "ybk",
+      "zc"
+     ],
+     [
+      4,
+      "ybk",
+      "zc"
+     ],
+     "back wall ceiling"
+    ],
+    [
+     1000,
+     84.2,
+     [
+      -1,
+      "ybk",
+      "zc"
+     ],
+     [
+      4,
+      "ybk",
+      "zc"
+     ],
+     "back wall ceiling"
+    ],
+    [
+     420,
+     828.8,
+     [
+      0.15,
+      1,
+      2.84
+     ],
+     [
+      0.15,
+      5,
+      2.84
+     ],
+     "far wall floor"
+    ],
+    [
+     500,
+     813.8,
+     [
+      0.15,
+      1,
+      2.84
+     ],
+     [
+      0.15,
+      5,
+      2.84
+     ],
+     "far wall floor"
+    ],
+    [
+     600,
+     796.3,
+     [
+      0.15,
+      1,
+      2.84
+     ],
+     [
+      0.15,
+      5,
+      2.84
+     ],
+     "far wall floor"
+    ],
+    [
+     700,
+     778.9,
+     [
+      0.15,
+      1,
+      2.84
+     ],
+     [
+      0.15,
+      5,
+      2.84
+     ],
+     "far wall floor"
+    ],
+    [
+     420,
+     812.8,
+     [
+      0.15,
+      1,
+      "2.84+bb"
+     ],
+     [
+      0.15,
+      5,
+      "2.84+bb"
+     ],
+     "far wall bb top"
+    ],
+    [
+     500,
+     798.9,
+     [
+      0.15,
+      1,
+      "2.84+bb"
+     ],
+     [
+      0.15,
+      5,
+      "2.84+bb"
+     ],
+     "far wall bb top"
+    ],
+    [
+     600,
+     781.5,
+     [
+      0.15,
+      1,
+      "2.84+bb"
+     ],
+     [
+      0.15,
+      5,
+      "2.84+bb"
+     ],
+     "far wall bb top"
+    ],
+    [
+     700,
+     765.0,
+     [
+      0.15,
+      1,
+      "2.84+bb"
+     ],
+     [
+      0.15,
+      5,
+      "2.84+bb"
+     ],
+     "far wall bb top"
+    ],
+    [
+     900,
+     813.0,
+     [
+      -1,
+      "ybk",
+      2.84
+     ],
+     [
+      4,
+      "ybk",
+      2.84
+     ],
+     "back wall floor"
+    ],
+    [
+     1000,
+     871.6,
+     [
+      -1,
+      "ybk",
+      2.84
+     ],
+     [
+      4,
+      "ybk",
+      2.84
+     ],
+     "back wall floor"
+    ],
+    [
+     1100,
+     930.8,
+     [
+      -1,
+      "ybk",
+      2.84
+     ],
+     [
+      4,
+      "ybk",
+      2.84
+     ],
+     "back wall floor"
+    ],
+    [
+     1200,
+     989.7,
+     [
+      -1,
+      "ybk",
+      2.84
+     ],
+     [
+      4,
+      "ybk",
+      2.84
+     ],
+     "back wall floor"
+    ],
+    [
+     344.1,
+     150,
+     [
+      0.15,
+      "cy1",
+      2.84
+     ],
+     [
+      0.15,
+      "cy1",
+      5.2
+     ],
+     "chase / far wall corner"
+    ],
+    [
+     338.3,
+     250,
+     [
+      0.15,
+      "cy1",
+      2.84
+     ],
+     [
+      0.15,
+      "cy1",
+      5.2
+     ],
+     "chase / far wall corner"
+    ],
+    [
+     204.4,
+     150,
+     [
+      "cx",
+      1.37,
+      2.84
+     ],
+     [
+      "cx",
+      1.37,
+      5.2
+     ],
+     "front wall / chase corner"
+    ],
+    [
+     207.2,
+     250,
+     [
+      "cx",
+      1.37,
+      2.84
+     ],
+     [
+      "cx",
+      1.37,
+      5.2
+     ],
+     "front wall / chase corner"
+    ],
+    [
+     209.6,
+     350,
+     [
+      "cx",
+      1.37,
+      2.84
+     ],
+     [
+      "cx",
+      1.37,
+      5.2
+     ],
+     "front wall / chase corner"
+    ],
+    [
+     94.0,
+     150,
+     [
+      "wx0",
+      1.37,
+      2.84
+     ],
+     [
+      "wx0",
+      1.37,
+      5.2
+     ],
+     "left-gable window -X edge (return)"
+    ],
+    [
+     94.0,
+     250,
+     [
+      "wx0",
+      1.37,
+      2.84
+     ],
+     [
+      "wx0",
+      1.37,
+      5.2
+     ],
+     "left-gable window -X edge (return)"
+    ]
+   ]
+  }
+ }
+}

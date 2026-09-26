@@ -1,0 +1,298 @@
+{
+  "schema_version": 1,
+  "house": "13695 Stanford Dr, Carmel IN",
+  "heading": "13695 Stanford Drive, photo by photo.",
+  "description": "All 32 listing photographs paired with the matching view of the Blender reconstruction.",
+  "notes": "Second review round. Every camera is solved from the photograph (architecture only); the plan, roof, openings, site and materials were corrected where the photographs agree, and the staging is reconstructed after the photos (some flat art and textiles use textures rectified from the listing photos). Hidden dimensions, the far side of the pond and the wider subdivision are inferred. Each still uses its own photo's sun; the film is lit at golden hour.",
+  "model": "output/stanford.blend",
+  "pairs": [
+    {
+      "photo": 1,
+      "title": "Front elevation from the sidewalk",
+      "camera": "hero",
+      "note": "Camera from a joint solve of 01/02/03/25/30/31 plus the driveway's vanishing lines (2.1 px). Roof lowered to the photos' 6.3/12 pitch (ridge 8.55 -> 8.19 m), so the right cross gable no longer towers; the front tree is refitted to its silhouette in 01/02/30/31 and hides that gable as in the photo.",
+      "render_kind": "whole_house_model",
+      "original": "photos/01.jpg",
+      "render": "output/renders/final/hero.png"
+    },
+    {
+      "photo": 2,
+      "title": "Front elevation, three-quarter",
+      "camera": "front",
+      "note": "Same joint solve (3.1 px). This photo was taken on a cloudier day with the facade in shade, so its sun sits high behind the house; the lower storey still renders somewhat brighter than the photo.",
+      "render_kind": "whole_house_model",
+      "original": "photos/02.jpg",
+      "render": "output/renders/final/front.png"
+    },
+    {
+      "photo": 3,
+      "title": "Front porch and entry",
+      "camera": "p03",
+      "note": "Porch camera re-solved (25.5 mm, 0.2 deg roll, 1.6 px; the old one had a fixed 22 mm lens). Column positions, the 5-lite sidelight, colonial six-panel door, soldier courses, keystone, plaque, lanterns, the curved walk and the rock beds with brick edging are back-projected from the photo.",
+      "render_kind": "whole_house_model",
+      "original": "photos/03.jpg",
+      "render": "output/renders/final/p03.png"
+    },
+    {
+      "photo": 4,
+      "title": "Foyer and front door",
+      "camera": "p04",
+      "note": "Camera solved jointly with 05/06 on the door wall and entry leaf (1.3 px). Swag valances over embroidered sheers, slipper chairs, the Syrian table and vase, the carpet/laminate line and the rug follow the photo; the two prints are textures rectified from this photo. The foyer's west wall moved to x 7.22 (a coat closet sits behind the porch brick).",
+      "render_kind": "whole_house_model",
+      "original": "photos/04.jpg",
+      "render": "output/renders/final/p04.png"
+    },
+    {
+      "photo": 5,
+      "title": "Living room toward the hall and stair",
+      "camera": "p05",
+      "note": "Camera 0.9 px. The stair moved 1.0 m back and the living room is now 3.7 m deep (13 ft, as listed); the closed 2-panel powder door, the flush dome light, sofa, cocktail table, bar cart, lamp, console and mirror follow the photo; the red abstract is rectified from this photo.",
+      "render_kind": "whole_house_model",
+      "original": "photos/05.jpg",
+      "render": "output/renders/final/p05.png"
+    },
+    {
+      "photo": 6,
+      "title": "Living room from the foyer",
+      "camera": "p06",
+      "note": "Camera 1.0 px. Carpeted U-stair with oak balustrade and turned newels, the diagonal carpet edge, and the sofa under the 'Irises' canvas (rectified from this photo); the stair renders ~0.2 m left of the photo's.",
+      "render_kind": "whole_house_model",
+      "original": "photos/06.jpg",
+      "render": "output/renders/final/p06.png"
+    },
+    {
+      "photo": 7,
+      "title": "Powder room",
+      "camera": "p07",
+      "note": "Camera solved in the powder-room doorway (0.8 px); the door swings out for this view. Maple vanity with square raised panels, cultured-marble top, frameless mirror and four-light bar.",
+      "render_kind": "whole_house_model",
+      "original": "photos/07.jpg",
+      "render": "output/renders/final/p07.png"
+    },
+    {
+      "photo": 8,
+      "title": "Great room from the corner",
+      "camera": "p08",
+      "note": "Camera re-solved (2.1 px): the old one stood 0.6 m higher on the wrong side of the view. The rear window pair with lowered 2-inch blinds and tied-back voile panels, the carved jhula, rush chairs and Persian rug follow the photo; the sofa was moved between photos 08 and 09, so its chaise is staged per photo.",
+      "render_kind": "whole_house_model",
+      "original": "photos/08.jpg",
+      "render": "output/renders/final/p08.png"
+    },
+    {
+      "photo": 9,
+      "title": "Great room, fireplace wall",
+      "camera": "p09",
+      "note": "Camera 2.1 px. Fireplace chase re-measured (0.55 m deep); the sectional, rug and glass table are placed through the solved camera; the Cafe Terrace print is rectified from this photo.",
+      "render_kind": "whole_house_model",
+      "original": "photos/09.jpg",
+      "render": "output/renders/final/p09.png"
+    },
+    {
+      "photo": 10,
+      "title": "Fireplace and TV",
+      "camera": "p10",
+      "note": "Camera 1.9 px (a 32 mm crop). Painted fluted mantel, 12-inch tile surround with real joints and a louvred glass-front gas firebox with logs; the city painting and the almond-blossom print are rectified from this photo.",
+      "render_kind": "whole_house_model",
+      "original": "photos/10.jpg",
+      "render": "output/renders/final/p10.png"
+    },
+    {
+      "photo": 11,
+      "title": "Dining area and patio slider",
+      "camera": "p11",
+      "note": "Camera 3.3 px, held north of the pier (the photo shows neither the pier nor the island). Slider rebuilt as a 2-panel vinyl unit with thin 3x5 grilles under a white cornice valance with stacked vertical blinds; brushed-nickel bell chandelier, espresso parquet table with six panel-back chairs, Roman-numeral clock, ceiling register, browner floor.",
+      "render_kind": "whole_house_model",
+      "original": "photos/11.jpg",
+      "render": "output/renders/final/p11.png"
+    },
+    {
+      "photo": 12,
+      "title": "Kitchen, sink and range",
+      "camera": "p12",
+      "note": "Kitchen re-laid from a joint 12/13/14 solve (1.9 px): the fridge wall was 0.5 m off and the island too big (now 0.9 x 1.2 m). Honey maple with cathedral-arch uppers, speckled laminate tops (dark island, tan perimeter), stainless dishwasher and range, sink window with a blind, cans at their photographed positions; dining chairs the photographer moved are hidden for this view.",
+      "render_kind": "whole_house_model",
+      "original": "photos/12.jpg",
+      "render": "output/renders/final/p12.png"
+    },
+    {
+      "photo": 13,
+      "title": "Kitchen, range, pantry and refrigerator",
+      "camera": "p13",
+      "note": "Camera 2.0 px. Range wall with the hood over a brushed splash, the angled pantry door, the 36-inch top-freezer refrigerator against its return, countertop microwave.",
+      "render_kind": "whole_house_model",
+      "original": "photos/13.jpg",
+      "render": "output/renders/final/p13.png"
+    },
+    {
+      "photo": 14,
+      "title": "Kitchen toward the dining and great room",
+      "camera": "p14",
+      "note": "Camera 2.9 px. Pier, island, the dining set under the room-centred chandelier, the slider with its valance, and the garage-entry door at the hall's end.",
+      "render_kind": "whole_house_model",
+      "original": "photos/14.jpg",
+      "render": "output/renders/final/p14.png"
+    },
+    {
+      "photo": 15,
+      "title": "Stair landing from the upper hall",
+      "camera": "p15",
+      "note": "Not perspective-corrected: free pitch -15.7 deg and roll -1.1 deg (1.5 px on the far field). Window, crystal drum pendant, camel print (rectified) and landing plants (stand-in species); the near balustrade renders ~0.3 m high (open).",
+      "render_kind": "whole_house_model",
+      "original": "photos/15.jpg",
+      "render": "output/renders/final/p15.png"
+    },
+    {
+      "photo": 16,
+      "title": "Primary bedroom toward the rear windows",
+      "camera": "p16",
+      "note": "Level camera on the 5.20 m upper ceiling (the old 5.46 m ceiling was the error), tray 0.51 x 0.29 m, 1.0 px. Bed, art, the three crewel embroideries and pillow fabric use textures rectified from the photos; per-room paint matched to the photo.",
+      "render_kind": "whole_house_model",
+      "original": "photos/16.jpg",
+      "render": "output/renders/final/p16.png"
+    },
+    {
+      "photo": 17,
+      "title": "Primary bedroom toward the entry",
+      "camera": "p17",
+      "note": "Same joint solve as 16 (1.2 px). Bath door, bike, cherry chest, nightstands with crystal lamps, recliner and sofa placed from the photo; the comforter is flatter than the real one.",
+      "render_kind": "whole_house_model",
+      "original": "photos/17.jpg",
+      "render": "output/renders/final/p17.png"
+    },
+    {
+      "photo": 18,
+      "title": "Primary bath",
+      "camera": "p18",
+      "note": "Camera 0.3 px; far wall re-measured (y 3.96). Vanity, mirror, six-globe bar, toilet, towel bar, curtain, rugs and soap bottles re-created from the photo (fabrics rectified).",
+      "render_kind": "whole_house_model",
+      "original": "photos/18.jpg",
+      "render": "output/renders/final/p18.png"
+    },
+    {
+      "photo": 19,
+      "title": "Bedroom, rear right",
+      "camera": "p19",
+      "note": "Camera 0.6 px (weak scale). King bed with a skirt and striped comforter, two bookcases, lantern lamp and floor cushions; the bokeh canvas and two etchings are rectified from the photo.",
+      "render_kind": "whole_house_model",
+      "original": "photos/19.jpg",
+      "render": "output/renders/final/p19.png"
+    },
+    {
+      "photo": 20,
+      "title": "Bedroom, front right gable",
+      "camera": "p20",
+      "note": "Camera 0.5 px on the new upper front wall. Bed, desk, chair, printer, side table and mirror panel placed from the photo; the facade's recess corner is kept although the photo shows none (open).",
+      "render_kind": "whole_house_model",
+      "original": "photos/20.jpg",
+      "render": "output/renders/final/p20.png"
+    },
+    {
+      "photo": 21,
+      "title": "Bedroom in the brick bay",
+      "camera": "p21",
+      "note": "Camera 0.7 px, standing in the doorway. Cube-panel bed, paisley comforter, kilim runner, glass console, etagere and sheers on a black rod; both paintings are rectified from the photo.",
+      "render_kind": "whole_house_model",
+      "original": "photos/21.jpg",
+      "render": "output/renders/final/p21.png"
+    },
+    {
+      "photo": 22,
+      "title": "Primary walk-in closet",
+      "camera": "p22",
+      "note": "The primary walk-in closet behind the left-gable window (2.05 m deep), camera 1.4 px: wire shelving, coats, blankets, floor mirror and the chest with a TV.",
+      "render_kind": "whole_house_model",
+      "original": "photos/22.jpg",
+      "render": "output/renders/final/p22.png"
+    },
+    {
+      "photo": 23,
+      "title": "Hall bath",
+      "camera": "p23",
+      "note": "Camera 0.4 px. Hall bath with its pier and toilet nook, the double vanity and mirror, gold-dot curtain, towel and orchid.",
+      "render_kind": "whole_house_model",
+      "original": "photos/23.jpg",
+      "render": "output/renders/final/p23.png"
+    },
+    {
+      "photo": 24,
+      "title": "Garage",
+      "camera": "p24",
+      "note": "Camera 1.1 px from the open door. Door panels on the low tracks for this view only, the curb along the back wall, opener with its release handle, shelf, carts, mower and rear-wall clutter placed from the photo; the sun patch comes from this photo's sun.",
+      "render_kind": "whole_house_model",
+      "original": "photos/24.jpg",
+      "render": "output/renders/final/p24.png"
+    },
+    {
+      "photo": 25,
+      "title": "Rear elevation from the common lawn",
+      "camera": "rear",
+      "note": "Rear camera 0.9 px. The openings were already right (the small window left of the slider is the kitchen window, visible in 27/28 and hidden by the shrub here); what changed is the narrow vinyl J-channel trim, 6/6 grilles, the 3x5 slider, the rear fixtures, the lighter siding, warmer roof and the patio.",
+      "render_kind": "whole_house_model",
+      "original": "photos/25.jpg",
+      "render": "output/renders/final/rear.png"
+    },
+    {
+      "photo": 26,
+      "title": "View from the patio to the pond",
+      "camera": "p26",
+      "note": "Camera solved on the fence posts, the far shore, riprap and two far-bank houses. Patio edge, rock border, lights, hook, stones and irises from a bundle adjustment of 25-28; trees placed from their trunk rays; pond and far bank from the aerial trace.",
+      "render_kind": "whole_house_model",
+      "original": "photos/26.jpg",
+      "render": "output/renders/final/p26.png"
+    },
+    {
+      "photo": 27,
+      "title": "Patio from above (drone)",
+      "camera": "p27",
+      "note": "Keystone- and aspect-edited drone photo matched as a pinhole with an aspect change and a shear (~3 px on the wall); its own sun puts the patio in the house's shadow as photographed. The patio outline, fan and circle-kit pavers, rock bed, stepping stones and all staging are traced from this photo.",
+      "render_kind": "whole_house_model",
+      "original": "photos/27.jpg",
+      "render": "output/renders/final/p27.png"
+    },
+    {
+      "photo": 28,
+      "title": "Rear wall and patio",
+      "camera": "p28",
+      "note": "Rear-wall solve (2.1 px) with the lens from a ground-feature bundle adjustment. Grill, glass-top table, four porcelain stools, irises and hydrangeas as photographed; the wall fixtures sit where 25 and 28 agree.",
+      "render_kind": "whole_house_model",
+      "original": "photos/28.jpg",
+      "render": "output/renders/final/p28.png"
+    },
+    {
+      "photo": 29,
+      "title": "The common walking path",
+      "camera": "p29",
+      "note": "Camera estimated from the path's vanishing point and width, tied to a trunk also seen in 26. The allee of low-forking honey locusts and the grass edges follow the photo; no fence along the path.",
+      "render_kind": "whole_house_model",
+      "original": "photos/29.jpg",
+      "render": "output/renders/final/p29.png"
+    },
+    {
+      "photo": 30,
+      "title": "Drone view of the front",
+      "camera": "p30",
+      "note": "Drone camera 3.9 px. Roof pitches, ridge, can vent and downspouts from the joint solve; the front tree tops the ridge; neighbours rebuilt as measured massing; the pond, the yellow Sunburst locust and the far row line up.",
+      "render_kind": "whole_house_model",
+      "original": "photos/30.jpg",
+      "render": "output/renders/final/p30.png"
+    },
+    {
+      "photo": 31,
+      "title": "Aerial over the street and pond",
+      "camera": "aerial",
+      "note": "Camera solved jointly with 32 (2.3 px). Shoreline (~110 x 84 m), riprap swales, boulder groups, fountain, loop path and the far-row houses traced from 31/32; trees placed from their crowns (the belt behind the lots is inferred where the canopy is closed).",
+      "render_kind": "whole_house_model",
+      "original": "photos/31.jpg",
+      "render": "output/renders/final/aerial.png"
+    },
+    {
+      "photo": 32,
+      "title": "High aerial of Stanford Park",
+      "camera": "p32",
+      "note": "Camera solved jointly with 31 (1.9 px, horizon-pinned; the old one was ~35 % too wide). Streets round the pond block, the woodland and the pond traced from the photo; the subdivision beyond (~17 k instanced houses on gently rolling ground) is inferred.",
+      "render_kind": "whole_house_model",
+      "original": "photos/32.jpg",
+      "render": "output/renders/final/p32.png"
+    }
+  ]
+}

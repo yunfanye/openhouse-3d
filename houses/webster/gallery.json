@@ -1,0 +1,300 @@
+{
+  "schema_version": 1,
+  "house": "1836 Webster Street, Palo Alto",
+  "description": "Every original photo, paired with its rendered view. Compare the rooms, details and garden of Webster House.",
+  "notes": "Furniture, lighting and landscaping are staged. Camera positions and hidden dimensions are approximate. Photo 22 is a separate photo-derived closet study, not part of the whole-house model. Image 31 is a floor plan, included as a supporting reference.",
+  "render_resolution": [
+    1920,
+    1280
+  ],
+  "model": "output/final/models/webster.blend",
+  "pairs": [
+    {
+      "photo": 0,
+      "title": "Front of the house",
+      "camera": "hero",
+      "note": "Continuous tiled roof coverage; no added roof-edge parapets. Porch and terrace railings retained.",
+      "render_kind": "whole_house_model",
+      "original": "photos/00.jpg",
+      "render": "output/final/renders/hero.png"
+    },
+    {
+      "photo": 1,
+      "title": "Living room · fireplace",
+      "camera": "living",
+      "note": "Large side window / flush fireplace / small side window; rear blackboard and open shelves restored.",
+      "render_kind": "whole_house_model",
+      "original": "photos/01.jpg",
+      "render": "output/final/renders/living.png"
+    },
+    {
+      "photo": 2,
+      "title": "Living room · entry",
+      "camera": "living2",
+      "note": "Front triple window and cased entry arch retained. Furnishings are added staging.",
+      "render_kind": "whole_house_model",
+      "original": "photos/02.jpg",
+      "render": "output/final/renders/living2.png"
+    },
+    {
+      "photo": 3,
+      "title": "Dining room · kitchen doorway",
+      "camera": "dining2",
+      "note": "Black rectangular cage pendant, doorway positions, upper divided sashes and clear lower panes.",
+      "render_kind": "whole_house_model",
+      "original": "photos/03.jpg",
+      "render": "output/final/renders/dining2.png"
+    },
+    {
+      "photo": 4,
+      "title": "Dining room · French doors",
+      "camera": "dining",
+      "note": "French doors with full-height glazed sidelights; original cage pendant retained.",
+      "render_kind": "whole_house_model",
+      "original": "photos/04.jpg",
+      "render": "output/final/renders/dining.png"
+    },
+    {
+      "photo": 5,
+      "title": "Kitchen · long view",
+      "camera": "kitchen",
+      "note": "Refrigerator, cooktop and wall-oven run recessed to clear both original kitchen doorways.",
+      "render_kind": "whole_house_model",
+      "original": "photos/05.jpg",
+      "render": "output/final/renders/kitchen.png"
+    },
+    {
+      "photo": 6,
+      "title": "Kitchen · sink and cabinets",
+      "camera": "kitchen2",
+      "note": "Hollow divided-glass upper cabinets, single sink, dishwasher and ornamental tile band.",
+      "render_kind": "whole_house_model",
+      "original": "photos/06.jpg",
+      "render": "output/final/renders/kitchen2.png"
+    },
+    {
+      "photo": 7,
+      "title": "Kitchen · appliances",
+      "camera": "kitchen3",
+      "note": "Wall oven and range cabinetry retain their dimensions and fixture types; the complete west run is set back 60 cm.",
+      "render_kind": "whole_house_model",
+      "original": "photos/07.jpg",
+      "render": "output/final/renders/kitchen3.png"
+    },
+    {
+      "photo": 8,
+      "title": "Laundry",
+      "camera": "laundry",
+      "note": "Top-loading laundry appliances and upper cabinets retained.",
+      "render_kind": "whole_house_model",
+      "original": "photos/08.jpg",
+      "render": "output/final/renders/laundry.png"
+    },
+    {
+      "photo": 9,
+      "title": "Family room",
+      "camera": "family",
+      "note": "Projecting rear bay, French doors, corner windows, closet and square ceiling fixture.",
+      "render_kind": "whole_house_model",
+      "original": "photos/09.jpg",
+      "render": "output/final/renders/family.png"
+    },
+    {
+      "photo": 10,
+      "title": "Main-floor bedroom · front",
+      "camera": "bed_a",
+      "note": "Bedroom closet, double-hung window and square ceiling fixture retained.",
+      "render_kind": "whole_house_model",
+      "original": "photos/10.jpg",
+      "render": "output/final/renders/bed_a.png"
+    },
+    {
+      "photo": 11,
+      "title": "Main-floor bedroom · rear",
+      "camera": "bed_b",
+      "note": "Rear bedroom closet and corner shelves; matching six-over-one rear windows.",
+      "render_kind": "whole_house_model",
+      "original": "photos/11.jpg",
+      "render": "output/final/renders/bed_b.png"
+    },
+    {
+      "photo": 12,
+      "title": "Main bathroom · sink",
+      "camera": "bath_a2",
+      "note": "Pedestal sink, mirror, toilet and frosted sash restored; previous fitted vanity removed.",
+      "render_kind": "whole_house_model",
+      "original": "photos/12.jpg",
+      "render": "output/final/renders/bath_a2.png"
+    },
+    {
+      "photo": 13,
+      "title": "Main bathroom · tub and shower",
+      "camera": "bath_a",
+      "note": "Separate tub and glass shower, brass fittings, peach/blue checker tile.",
+      "render_kind": "whole_house_model",
+      "original": "photos/13.jpg",
+      "render": "output/final/renders/bath_a.png"
+    },
+    {
+      "photo": 14,
+      "title": "Primary suite · side windows",
+      "camera": "prim_alt",
+      "note": "Primary suite alternate view: side sash windows, bathroom connection and staged furnishings.",
+      "render_kind": "whole_house_model",
+      "original": "photos/14.jpg",
+      "render": "output/final/renders/prim_alt.png"
+    },
+    {
+      "photo": 15,
+      "title": "Entry and staircase",
+      "camera": "entry",
+      "note": "Enclosed carpeted stair and white iron rail retained.",
+      "render_kind": "whole_house_model",
+      "original": "photos/15.jpg",
+      "render": "output/final/renders/entry.png"
+    },
+    {
+      "photo": 16,
+      "title": "Bedroom · terrace doors",
+      "camera": "bed2",
+      "note": "Slider to the enclosed terrace; closet and original sconce style. Furniture is added.",
+      "render_kind": "whole_house_model",
+      "original": "photos/16.jpg",
+      "render": "output/final/renders/bed2.png"
+    },
+    {
+      "photo": 17,
+      "title": "Walk-in closet",
+      "camera": "wic2",
+      "note": "Closet storage and narrow window; closet dimensions remain inferred from the schematic plan.",
+      "render_kind": "whole_house_model",
+      "original": "photos/17.jpg",
+      "render": "output/final/renders/wic2.png"
+    },
+    {
+      "photo": 18,
+      "title": "Upper bedroom · rear",
+      "camera": "bed3b",
+      "note": "Two paired rear window units with four tall panes; square ceiling panel.",
+      "render_kind": "whole_house_model",
+      "original": "photos/18.jpg",
+      "render": "output/final/renders/bed3b.png"
+    },
+    {
+      "photo": 19,
+      "title": "Hall bathroom",
+      "camera": "hbath",
+      "note": "Paired window above tub, two checker-tile rows, pedestal sink and twin-shade wall light.",
+      "render_kind": "whole_house_model",
+      "original": "photos/19.jpg",
+      "render": "output/final/renders/hbath.png"
+    },
+    {
+      "photo": 20,
+      "title": "Primary suite · front window",
+      "camera": "prim_front",
+      "note": "Primary-suite reverse angle: the front picture window, transom, side sashes and original window AC.",
+      "render_kind": "whole_house_model",
+      "original": "photos/20.jpg",
+      "render": "output/final/renders/prim_front.png"
+    },
+    {
+      "photo": 21,
+      "title": "Primary suite · reverse view",
+      "camera": "prim",
+      "note": "Primary-suite doors and east windows retained. Bed, rugs and table lamps are staging.",
+      "render_kind": "whole_house_model",
+      "original": "photos/21.jpg",
+      "render": "output/final/renders/prim.png"
+    },
+    {
+      "photo": 22,
+      "title": "Closet · leaded windows",
+      "camera": "photo_22_closet",
+      "note": "Photo-based closet study: leaded windows, hanging rails and stair enclosure. Hidden dimensions and the stair junction are inferred.",
+      "render_kind": "separate_photo_derived_detail",
+      "original": "photos/22.jpg",
+      "render": "output/final/details/renders/22.png"
+    },
+    {
+      "photo": 23,
+      "title": "Primary bathroom · vanity",
+      "camera": "pbath",
+      "note": "Double oval basins with actual bowl recesses, granite top, paired rear window, twin brass sconces.",
+      "render_kind": "whole_house_model",
+      "original": "photos/23.jpg",
+      "render": "output/final/renders/pbath.png"
+    },
+    {
+      "photo": 24,
+      "title": "Primary bathroom · shower",
+      "camera": "pbath2",
+      "note": "Brass/glass shower, larger checker granite accents and toiletry recess detail.",
+      "render_kind": "whole_house_model",
+      "original": "photos/24.jpg",
+      "render": "output/final/renders/pbath2.png"
+    },
+    {
+      "photo": 25,
+      "title": "Powder room",
+      "camera": "powder",
+      "note": "White vanity, mirrored medicine cabinet, vertical bar light and floral stained-glass interpretation.",
+      "render_kind": "whole_house_model",
+      "original": "photos/25.jpg",
+      "render": "output/final/renders/powder.png"
+    },
+    {
+      "photo": 26,
+      "title": "Bedroom · reverse view",
+      "camera": "bed2b",
+      "note": "Frosted six-over-one window and dark wall sconces restored; the window’s hidden adjacency is inferred.",
+      "render_kind": "whole_house_model",
+      "original": "photos/26.jpg",
+      "render": "output/final/renders/bed2b.png"
+    },
+    {
+      "photo": 27,
+      "title": "Patio and outbuildings",
+      "camera": "patio",
+      "note": "Brick patio, detached garage and garden shed retained; landscaped/staged garden is intentional.",
+      "render_kind": "whole_house_model",
+      "original": "photos/27.jpg",
+      "render": "output/final/renders/patio.png"
+    },
+    {
+      "photo": 28,
+      "title": "Back garden · wide view",
+      "camera": "yard",
+      "note": "Stepped rear massing, narrower upper gable, four clear panes and rectangular gable vent.",
+      "render_kind": "whole_house_model",
+      "original": "photos/28.jpg",
+      "render": "output/final/renders/yard.png"
+    },
+    {
+      "photo": 29,
+      "title": "Rear of the house",
+      "camera": "rear",
+      "note": "Family-room projection, return window, matching bedroom windows, left-side rail and wider brick patio.",
+      "render_kind": "whole_house_model",
+      "original": "photos/29.jpg",
+      "render": "output/final/renders/rear.png"
+    },
+    {
+      "photo": 30,
+      "title": "Side entrance and driveway",
+      "camera": "drive",
+      "note": "Garden window, glazed side door and side eaves; recessed entrance, original shutters, trellis and window AC restored.",
+      "render_kind": "whole_house_model",
+      "original": "photos/30.jpg",
+      "render": "output/final/renders/drive.png"
+    }
+  ],
+  "supporting_references": [
+    {
+      "source": "photos/31.jpg",
+      "file": "31_floor_plan.jpg",
+      "kind": "original_floor_plan"
+    }
+  ],
+  "heading": "Webster House, side by side."
+}

@@ -1,0 +1,9 @@
+{
+  "title": "Wonders of the Earth",
+  "artist": "Grand_Project (Roman Dudchyk)",
+  "source": "https://pixabay.com/music/adventure-wonders-of-the-earth-550792/",
+  "license": "Pixabay Content License (free for commercial use; Content ID registered by the author)",
+  "download": "Use the page's Free download button; save as houses/stanford/output/music/wonders_grandproject_550792.mp3",
+  "sha256": "5462037249c835be9003234bd5a8cc6918af83e3828549d0e3bd92ca8145471d",
+  "edit": "promo.py: 2.38 s of silence, source 0-55.60 s, 40 ms crossfade into source 141.21 s-end, 1.5 s fade, -1 dBFS peak"
+}

@@ -1,0 +1,91 @@
+{
+  "source": "output/final/webster_cinematic.mp4",
+  "gallery": "output/final/gallery",
+  "fps": 24,
+  "frames": 1537,
+  "source_size": [
+    1920,
+    1080
+  ],
+  "output_size": [
+    1920,
+    1800
+  ],
+  "timing_note": "Frame-zero-based switches chosen against the delivered movie. Entry pair repeats as the camera returns through the hall. The rear pair continues across the exterior terrace approach.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "photo": 0,
+      "title": "Front exterior",
+      "review_time": 6.0
+    },
+    {
+      "start_frame": 228,
+      "photo": 15,
+      "title": "Entry and staircase",
+      "review_time": 10.3
+    },
+    {
+      "start_frame": 288,
+      "photo": 1,
+      "title": "Living room \u00b7 fireplace",
+      "review_time": 14.0
+    },
+    {
+      "start_frame": 420,
+      "photo": 2,
+      "title": "Living room \u00b7 front windows",
+      "review_time": 18.5
+    },
+    {
+      "start_frame": 528,
+      "photo": 15,
+      "title": "Entry and staircase",
+      "review_time": 23.0
+    },
+    {
+      "start_frame": 588,
+      "photo": 3,
+      "title": "Dining room",
+      "review_time": 26.0
+    },
+    {
+      "start_frame": 684,
+      "photo": 5,
+      "title": "Kitchen",
+      "review_time": 30.0
+    },
+    {
+      "start_frame": 816,
+      "photo": 9,
+      "title": "Family room",
+      "review_time": 36.0
+    },
+    {
+      "start_frame": 900,
+      "photo": 27,
+      "title": "Patio and garden",
+      "review_time": 39.0
+    },
+    {
+      "start_frame": 1056,
+      "photo": 29,
+      "title": "Rear exterior and terrace approach",
+      "review_time": 46.0
+    },
+    {
+      "start_frame": 1236,
+      "photo": 26,
+      "title": "Upper bedroom",
+      "review_time": 53.5
+    },
+    {
+      "start_frame": 1344,
+      "photo": 20,
+      "title": "Primary suite",
+      "review_time": 58.5
+    }
+  ],
+  "schema_version": 1,
+  "title": "1836 Webster Street | Photo and Render Comparison"
+}

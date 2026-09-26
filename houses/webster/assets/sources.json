@@ -1,0 +1,56 @@
+[
+  {
+    "asset": "kloppenheim_06_puresky",
+    "map": "hdri",
+    "file": "kloppenheim_06_puresky_4k.hdr",
+    "source": "https://polyhaven.com/a/kloppenheim_06_puresky",
+    "license": "CC0",
+    "url": "https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/4k/kloppenheim_06_puresky_4k.hdr",
+    "sha256": "1bebd7cbbfb5c48a642f03d93bffbabb2c42d0b109061f37a72259d1cbdb3053"
+  },
+  {
+    "asset": "wood_floor",
+    "map": "Diffuse",
+    "file": "wood_floor_diff_2k.jpg",
+    "source": "https://polyhaven.com/a/wood_floor",
+    "license": "CC0",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/wood_floor/wood_floor_diff_2k.jpg",
+    "sha256": "7c3ff1164c8dd0758ef2c048e9a266d28174120de01052ec40e6ca486177345c"
+  },
+  {
+    "asset": "wood_floor",
+    "map": "Rough",
+    "file": "wood_floor_rough_2k.jpg",
+    "source": "https://polyhaven.com/a/wood_floor",
+    "license": "CC0",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/wood_floor/wood_floor_rough_2k.jpg",
+    "sha256": "297eda0d75f2020cc541dbf242e1f5fd058053249567f49a4506fc2c5b1a172b"
+  },
+  {
+    "asset": "wood_floor",
+    "map": "nor_gl",
+    "file": "wood_floor_nor_gl_2k.jpg",
+    "source": "https://polyhaven.com/a/wood_floor",
+    "license": "CC0",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/wood_floor/wood_floor_nor_gl_2k.jpg",
+    "sha256": "eff2e4db46bab930dc05997faf5085157eec4fd652cdfc6cd01fa11edd56ef10"
+  },
+  {
+    "asset": "fabric_leather_01",
+    "map": "nor_gl",
+    "file": "fabric_leather_01_nor_gl_2k.jpg",
+    "source": "https://polyhaven.com/a/fabric_leather_01",
+    "license": "CC0",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/fabric_leather_01/fabric_leather_01_nor_gl_2k.jpg",
+    "sha256": "e4b6b2971ef0dfe999cc288db052011e76f7f5c18a17f7a9b7f8e45d77791959"
+  },
+  {
+    "asset": "fabric_leather_01",
+    "map": "Rough",
+    "file": "fabric_leather_01_rough_2k.jpg",
+    "source": "https://polyhaven.com/a/fabric_leather_01",
+    "license": "CC0",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/fabric_leather_01/fabric_leather_01_rough_2k.jpg",
+    "sha256": "f3c5d08786ca78b984e4563d92e551b34a1d7f6845b1376da44694039aa62e3b"
+  }
+]

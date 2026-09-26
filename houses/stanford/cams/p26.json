@@ -1,0 +1,255 @@
+{
+ "unknowns": {
+  "fx": 14.4,
+  "fy0": 30.5,
+  "sp": 1.9,
+  "zfb": -0.5,
+  "fh": 1.2,
+  "s1": 20,
+  "s2": 30,
+  "gy": 0.01,
+  "rsx": 38.3,
+  "rsy": 80.1
+ },
+ "priors": {
+  "fx": [
+   14.2,
+   1.0
+  ],
+  "fy0": [
+   31.0,
+   3.0
+  ],
+  "zfb": [
+   -0.5,
+   0.3
+  ],
+  "fh": [
+   1.22,
+   0.12
+  ],
+  "sp": [
+   1.95,
+   0.4
+  ],
+  "gy": [
+   0.012,
+   0.02
+  ],
+  "rsx": [
+   38.69,
+   0.7
+  ],
+  "rsy": [
+   85.0,
+   3.0
+  ]
+ },
+ "photos": {
+  "26": {
+   "size": [
+    1536,
+    1024
+   ],
+   "model": "level",
+   "init": {
+    "loc": [
+     5.9,
+     13.3,
+     0.9
+    ],
+    "yaw": -0.6,
+    "lens": 20,
+    "shift_x": -0.03,
+    "shift_y": 0.05
+   },
+   "points": [
+    [
+     1165.5,
+     583,
+     "fx",
+     "fy0",
+     "zfb+fh",
+     "corner top"
+    ],
+    [
+     1165.5,
+     628,
+     "fx",
+     "fy0",
+     "zfb",
+     "corner bottom"
+    ],
+    [
+     1212,
+     582,
+     "fx",
+     "fy0-1*sp",
+     "zfb+fh+gy*(30.35-(fy0-1*sp))",
+     "post1 top"
+    ],
+    [
+     1212,
+     641,
+     "fx",
+     "fy0-1*sp",
+     "zfb+gy*(30.35-(fy0-1*sp))",
+     "post1 bottom"
+    ],
+    [
+     1272,
+     583,
+     "fx",
+     "fy0-2*sp",
+     "zfb+fh+gy*(30.35-(fy0-2*sp))",
+     "post2 top"
+    ],
+    [
+     1272,
+     652,
+     "fx",
+     "fy0-2*sp",
+     "zfb+gy*(30.35-(fy0-2*sp))",
+     "post2 bottom"
+    ],
+    [
+     1355,
+     583,
+     "fx",
+     "fy0-3*sp",
+     "zfb+fh+gy*(30.35-(fy0-3*sp))",
+     "post3 top"
+    ],
+    [
+     1355,
+     666,
+     "fx",
+     "fy0-3*sp",
+     "zfb+gy*(30.35-(fy0-3*sp))",
+     "post3 bottom"
+    ],
+    [
+     850,
+     574,
+     "s1",
+     131.8,
+     -1.85,
+     "far shore 850"
+    ],
+    [
+     950,
+     574,
+     "s2",
+     131.8,
+     -1.85,
+     "far shore 950"
+    ],
+    [
+     1080,
+     574,
+     "rsx",
+     "rsy",
+     -1.55,
+     "riprap E lobe"
+    ],
+    [
+     885.7,
+     526.4,
+     24.98,
+     168.24,
+     6.2,
+     "beige eave R"
+    ],
+    [
+     905.7,
+     525.0,
+     30.41,
+     170.91,
+     6.2,
+     "gray eave L"
+    ],
+    [
+     1110,
+     797,
+     7.281,
+     17.86,
+     -0.193,
+     "La"
+    ],
+    [
+     820,
+     805,
+     5.862,
+     17.391,
+     -0.232,
+     "Lb"
+    ],
+    [
+     495,
+     782,
+     3.992,
+     18.165,
+     -0.316,
+     "Lc"
+    ],
+    [
+     215,
+     790,
+     2.632,
+     17.909,
+     -0.133,
+     "Ld"
+    ],
+    [
+     597,
+     787,
+     4.539,
+     18.281,
+     -0.283,
+     "Hook"
+    ],
+    [
+     557,
+     807,
+     4.657,
+     17.411,
+     -0.265,
+     "Saucer"
+    ],
+    [
+     990,
+     780,
+     6.889,
+     18.03,
+     -0.36,
+     "S1"
+    ],
+    [
+     870,
+     790,
+     6.28,
+     17.73,
+     -0.36,
+     "S2"
+    ],
+    [
+     745,
+     775,
+     5.535,
+     18.146,
+     -0.36,
+     "S3"
+    ],
+    [
+     660,
+     770,
+     5.016,
+     18.296,
+     -0.36,
+     "S4"
+    ]
+   ]
+  }
+ },
+ "_about": "Photo 26 (SITE_FAR): level camera from the neighbour's side-fence posts (x fx, equal spacing sp, grade sloping gy), two far-shore points (y 131.8 from 31/32), the east-lobe riprap (rsx, rsy; priors from the 31/32 triangulation), the eave corners of the far-row houses matched in 32 (beige x 24.98 y 168.24, grey x 30.41 y 170.91, z 6.2 back-projected from 32) and SITE_NEAR's 10 near-field patio features (La..S4, +/- 0.15 m -> ~15-30 px residuals). Run: python tools/solve_scene.py houses/stanford/cams/p26.json"
+}

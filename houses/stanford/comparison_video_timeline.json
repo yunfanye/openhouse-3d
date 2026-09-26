@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "title": "13695 Stanford Dr · Photo comparison",
+  "source": "output/final_v2/stanford_cinematic.mp4",
+  "gallery": "output/review2/gallery",
+  "fps": 24,
+  "frames": 1585,
+  "source_size": [
+    1920,
+    1080
+  ],
+  "output_size": [
+    1920,
+    1800
+  ],
+  "timing_note": "Frame-zero-based switches: each photo appears while the film shows its room or elevation (route of 2026-09-24).",
+  "segments": [
+    {
+      "start_frame": 0,
+      "photo": 31,
+      "title": "Aerial · the pond",
+      "review_time": 4.0
+    },
+    {
+      "start_frame": 228,
+      "photo": 32,
+      "title": "Stanford Park from above",
+      "review_time": 11.0
+    },
+    {
+      "start_frame": 312,
+      "photo": 25,
+      "title": "Rear elevation",
+      "review_time": 14.2
+    },
+    {
+      "start_frame": 374,
+      "photo": 27,
+      "title": "Patio from above",
+      "review_time": 17.0
+    },
+    {
+      "start_frame": 456,
+      "photo": 30,
+      "title": "Front from the drone",
+      "review_time": 20.6
+    },
+    {
+      "start_frame": 538,
+      "photo": 1,
+      "title": "Front elevation",
+      "review_time": 23.4
+    },
+    {
+      "start_frame": 605,
+      "photo": 3,
+      "title": "Front porch and entry",
+      "review_time": 26.0
+    },
+    {
+      "start_frame": 643,
+      "photo": 4,
+      "title": "Foyer and front door",
+      "review_time": 27.6
+    },
+    {
+      "start_frame": 682,
+      "photo": 6,
+      "title": "Living room",
+      "review_time": 29.4
+    },
+    {
+      "start_frame": 725,
+      "photo": 5,
+      "title": "Living room · stair and hall",
+      "review_time": 31.2
+    },
+    {
+      "start_frame": 816,
+      "photo": 10,
+      "title": "Great room · fireplace",
+      "review_time": 36.0
+    },
+    {
+      "start_frame": 907,
+      "photo": 8,
+      "title": "Great room · windows and swing",
+      "review_time": 39.4
+    },
+    {
+      "start_frame": 994,
+      "photo": 11,
+      "title": "Dining and patio slider",
+      "review_time": 42.4
+    },
+    {
+      "start_frame": 1051,
+      "photo": 14,
+      "title": "Kitchen · island",
+      "review_time": 44.8
+    },
+    {
+      "start_frame": 1099,
+      "photo": 12,
+      "title": "Kitchen · sink and range",
+      "review_time": 47.0
+    },
+    {
+      "start_frame": 1176,
+      "photo": 11,
+      "title": "Dining and patio slider",
+      "review_time": 50.4
+    },
+    {
+      "start_frame": 1258,
+      "photo": 26,
+      "title": "Patio toward the pond",
+      "review_time": 53.4
+    },
+    {
+      "start_frame": 1310,
+      "photo": 28,
+      "title": "Rear wall and patio",
+      "review_time": 55.6
+    },
+    {
+      "start_frame": 1373,
+      "photo": 25,
+      "title": "Rear elevation",
+      "review_time": 60.0
+    }
+  ]
+}

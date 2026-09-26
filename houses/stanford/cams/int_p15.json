@@ -1,0 +1,601 @@
+{
+ "_note": "Photo 15 (stair landing from the top of the upper flight; NOT perspective-corrected: free pitch + roll), tools/intcam_solve.py. Held: the landing's end wall x 12.35 (XB1 - EWT), the stairwell's south wall y 4.87 (ST_Y0), the ceiling 5.20 (prior), the landing floor 1.42 (Z_LAND), the window's casing outer width 0.932 (prior; plan landing_win 0.80 + 2 x 0.066). Unknowns: the window's y / casing top / stool, the pendant canopy (x, y) on the ceiling, the stairwell's back wall yb (far-left corner), baseboard. Near field (weight 0.3): the upper balustrade's shoe line and the landing newel (ball top z 2.53, axis) from INT_FRONT's stair, which follows photo 06 - without them the far-field-only solve put the camera 0.24 m too far north and the balustrade 80-170 px off; with them the far field still fits at ~1.5 px, the shoe at +13..-5 px and the newel ball 23 px (photo 15 wants it ~0.12 m lower than 06).",
+ "unknowns": {
+  "zc": 5.2,
+  "wy0": 5.384,
+  "wzt": 4.046,
+  "wzs": 2.568,
+  "pdx": 11.0,
+  "pdy": 5.8,
+  "ww": 0.932,
+  "bb": 0.09,
+  "yb": 6.82
+ },
+ "priors": {
+  "zc": [
+   5.2,
+   0.01
+  ],
+  "ww": [
+   0.932,
+   0.02
+  ],
+  "bb": [
+   0.09,
+   0.02
+  ]
+ },
+ "photos": {
+  "15": {
+   "size": [
+    768,
+    1152
+   ],
+   "model": "free_roll",
+   "photo": "../photos/15.jpg",
+   "init": {
+    "loc": [
+     9.35,
+     6.35,
+     3.83
+    ],
+    "yaw": 111,
+    "pitch": -9.2,
+    "lens": 17.5
+   },
+   "points": [
+    [
+     290,
+     82,
+     "pdx",
+     "pdy",
+     "zc",
+     "pendant canopy"
+    ],
+    [
+     330,
+     760,
+     11.28,
+     5.882,
+     2.53,
+     "landing newel ball top (06: z 2.53)",
+     0.3
+    ]
+   ],
+   "lines": [
+    [
+     431.7,
+     250,
+     [
+      12.35,
+      4.87,
+      1.42
+     ],
+     [
+      12.35,
+      4.87,
+      5.2
+     ],
+     "far-right corner"
+    ],
+    [
+     428.7,
+     350,
+     [
+      12.35,
+      4.87,
+      1.42
+     ],
+     [
+      12.35,
+      4.87,
+      5.2
+     ],
+     "far-right corner"
+    ],
+    [
+     424.8,
+     450,
+     [
+      12.35,
+      4.87,
+      1.42
+     ],
+     [
+      12.35,
+      4.87,
+      5.2
+     ],
+     "far-right corner"
+    ],
+    [
+     425.4,
+     550,
+     [
+      12.35,
+      4.87,
+      1.42
+     ],
+     [
+      12.35,
+      4.87,
+      5.2
+     ],
+     "far-right corner"
+    ],
+    [
+     60,
+     105.2,
+     [
+      12.35,
+      3,
+      "zc"
+     ],
+     [
+      12.35,
+      8,
+      "zc"
+     ],
+     "far wall ceiling"
+    ],
+    [
+     120,
+     118.1,
+     [
+      12.35,
+      3,
+      "zc"
+     ],
+     [
+      12.35,
+      8,
+      "zc"
+     ],
+     "far wall ceiling"
+    ],
+    [
+     200,
+     135,
+     [
+      12.35,
+      3,
+      "zc"
+     ],
+     [
+      12.35,
+      8,
+      "zc"
+     ],
+     "far wall ceiling"
+    ],
+    [
+     250,
+     145.5,
+     [
+      12.35,
+      3,
+      "zc"
+     ],
+     [
+      12.35,
+      8,
+      "zc"
+     ],
+     "far wall ceiling"
+    ],
+    [
+     330,
+     162.9,
+     [
+      12.35,
+      3,
+      "zc"
+     ],
+     [
+      12.35,
+      8,
+      "zc"
+     ],
+     "far wall ceiling"
+    ],
+    [
+     400,
+     178.7,
+     [
+      12.35,
+      3,
+      "zc"
+     ],
+     [
+      12.35,
+      8,
+      "zc"
+     ],
+     "far wall ceiling"
+    ],
+    [
+     460,
+     167.7,
+     [
+      8,
+      4.87,
+      "zc"
+     ],
+     [
+      13,
+      4.87,
+      "zc"
+     ],
+     "right (south) wall ceiling"
+    ],
+    [
+     500,
+     138.2,
+     [
+      8,
+      4.87,
+      "zc"
+     ],
+     [
+      13,
+      4.87,
+      "zc"
+     ],
+     "right (south) wall ceiling"
+    ],
+    [
+     550,
+     100.6,
+     [
+      8,
+      4.87,
+      "zc"
+     ],
+     [
+      13,
+      4.87,
+      "zc"
+     ],
+     "right (south) wall ceiling"
+    ],
+    [
+     600,
+     63.8,
+     [
+      8,
+      4.87,
+      "zc"
+     ],
+     [
+      13,
+      4.87,
+      "zc"
+     ],
+     "right (south) wall ceiling"
+    ],
+    [
+     650,
+     26.6,
+     [
+      8,
+      4.87,
+      "zc"
+     ],
+     [
+      13,
+      4.87,
+      "zc"
+     ],
+     "right (south) wall ceiling"
+    ],
+    [
+     183.5,
+     500,
+     [
+      12.35,
+      "wy0+ww",
+      1.42
+     ],
+     [
+      12.35,
+      "wy0+ww",
+      5.2
+     ],
+     "window casing +Y edge"
+    ],
+    [
+     183.5,
+     580,
+     [
+      12.35,
+      "wy0+ww",
+      1.42
+     ],
+     [
+      12.35,
+      "wy0+ww",
+      5.2
+     ],
+     "window casing +Y edge"
+    ],
+    [
+     342.8,
+     500,
+     [
+      12.35,
+      "wy0",
+      1.42
+     ],
+     [
+      12.35,
+      "wy0",
+      5.2
+     ],
+     "window casing -Y edge"
+    ],
+    [
+     342.8,
+     580,
+     [
+      12.35,
+      "wy0",
+      1.42
+     ],
+     [
+      12.35,
+      "wy0",
+      5.2
+     ],
+     "window casing -Y edge"
+    ],
+    [
+     220,
+     462.0,
+     [
+      12.35,
+      3,
+      "wzt"
+     ],
+     [
+      12.35,
+      8,
+      "wzt"
+     ],
+     "window casing top"
+    ],
+    [
+     280,
+     461.1,
+     [
+      12.35,
+      3,
+      "wzt"
+     ],
+     [
+      12.35,
+      8,
+      "wzt"
+     ],
+     "window casing top"
+    ],
+    [
+     220,
+     705.3,
+     [
+      12.35,
+      3,
+      "wzs"
+     ],
+     [
+      12.35,
+      8,
+      "wzs"
+     ],
+     "window stool"
+    ],
+    [
+     280,
+     703.9,
+     [
+      12.35,
+      3,
+      "wzs"
+     ],
+     [
+      12.35,
+      8,
+      "wzs"
+     ],
+     "window stool"
+    ],
+    [
+     300,
+     828.5,
+     [
+      12.35,
+      3,
+      1.42
+     ],
+     [
+      12.35,
+      8,
+      1.42
+     ],
+     "landing floor at the far wall"
+    ],
+    [
+     300,
+     812.0,
+     [
+      12.35,
+      3,
+      "1.42+bb"
+     ],
+     [
+      12.35,
+      8,
+      "1.42+bb"
+     ],
+     "landing baseboard top at the far wall"
+    ],
+    [
+     18.1,
+     150,
+     [
+      12.35,
+      "yb",
+      1.42
+     ],
+     [
+      12.35,
+      "yb",
+      5.2
+     ],
+     "far-left corner (stairwell back wall)"
+    ],
+    [
+     31.0,
+     250,
+     [
+      12.35,
+      "yb",
+      1.42
+     ],
+     [
+      12.35,
+      "yb",
+      5.2
+     ],
+     "far-left corner (stairwell back wall)"
+    ],
+    [
+     44.0,
+     350,
+     [
+      12.35,
+      "yb",
+      1.42
+     ],
+     [
+      12.35,
+      "yb",
+      5.2
+     ],
+     "far-left corner (stairwell back wall)"
+    ],
+    [
+     380,
+     960.1,
+     [
+      11.32,
+      5.915,
+      1.848
+     ],
+     [
+      9.76,
+      5.915,
+      3.065
+     ],
+     "upper balustrade shoe top (stair from 06)",
+     0.3
+    ],
+    [
+     420,
+     977.9,
+     [
+      11.32,
+      5.915,
+      1.848
+     ],
+     [
+      9.76,
+      5.915,
+      3.065
+     ],
+     "upper balustrade shoe top (stair from 06)",
+     0.3
+    ],
+    [
+     460,
+     995.5,
+     [
+      11.32,
+      5.915,
+      1.848
+     ],
+     [
+      9.76,
+      5.915,
+      3.065
+     ],
+     "upper balustrade shoe top (stair from 06)",
+     0.3
+    ],
+    [
+     500,
+     1014.9,
+     [
+      11.32,
+      5.915,
+      1.848
+     ],
+     [
+      9.76,
+      5.915,
+      3.065
+     ],
+     "upper balustrade shoe top (stair from 06)",
+     0.3
+    ],
+    [
+     540,
+     1031.6,
+     [
+      11.32,
+      5.915,
+      1.848
+     ],
+     [
+      9.76,
+      5.915,
+      3.065
+     ],
+     "upper balustrade shoe top (stair from 06)",
+     0.3
+    ],
+    [
+     331,
+     820,
+     [
+      11.28,
+      5.882,
+      1.4
+     ],
+     [
+      11.28,
+      5.882,
+      2.6
+     ],
+     "landing newel axis",
+     0.3
+    ],
+    [
+     331,
+     900,
+     [
+      11.28,
+      5.882,
+      1.4
+     ],
+     [
+      11.28,
+      5.882,
+      2.6
+     ],
+     "landing newel axis",
+     0.3
+    ]
+   ]
+  }
+ }
+}

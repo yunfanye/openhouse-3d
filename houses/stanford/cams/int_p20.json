@@ -1,0 +1,615 @@
+{
+ "_note": "Photo 20 (bedroom 20 from its back-right corner), tools/intcam_solve.py, level camera. Held: the front wall inner face y 1.37 (plan YB0_UP + EWT), ceiling 5.20, the window opening centre x (plan rg_win, prior) with a drywall-return opening width prior 0.89. Unknowns: the -X wall xr (bed20's closet wall), the window head ct, baseboard, the closet door's casing (y dy0, width dw, top dct).",
+ "unknowns": {
+  "zc": 5.2,
+  "xr": 5.41,
+  "wc": 7.411,
+  "cw": 1.022,
+  "ct": 5.04,
+  "bb": 0.1,
+  "dy0": 2.0,
+  "dw": 0.88,
+  "dct": 4.96
+ },
+ "priors": {
+  "zc": [
+   5.2,
+   0.01
+  ],
+  "wc": [
+   7.411,
+   0.02
+  ],
+  "cw": [
+   0.89,
+   0.02
+  ],
+  "dct": [
+   4.96,
+   0.03
+  ]
+ },
+ "photos": {
+  "20": {
+   "size": [
+    1536,
+    1024
+   ],
+   "model": "level",
+   "photo": "../photos/20.jpg",
+   "init": {
+    "loc": [
+     8.07,
+     5.65,
+     3.9
+    ],
+    "yaw": -141,
+    "lens": 16.5
+   },
+   "priors": {
+    "shift_x": [
+     0,
+     0.03
+    ]
+   },
+   "points": [],
+   "lines": [
+    [
+     100,
+     147.5,
+     [
+      3,
+      1.37,
+      "zc"
+     ],
+     [
+      10,
+      1.37,
+      "zc"
+     ],
+     "far (front) wall ceiling"
+    ],
+    [
+     200,
+     170.3,
+     [
+      3,
+      1.37,
+      "zc"
+     ],
+     [
+      10,
+      1.37,
+      "zc"
+     ],
+     "far (front) wall ceiling"
+    ],
+    [
+     500,
+     239.2,
+     [
+      3,
+      1.37,
+      "zc"
+     ],
+     [
+      10,
+      1.37,
+      "zc"
+     ],
+     "far (front) wall ceiling"
+    ],
+    [
+     600,
+     262.1,
+     [
+      3,
+      1.37,
+      "zc"
+     ],
+     [
+      10,
+      1.37,
+      "zc"
+     ],
+     "far (front) wall ceiling"
+    ],
+    [
+     850,
+     237.9,
+     [
+      "xr",
+      0,
+      "zc"
+     ],
+     [
+      "xr",
+      7,
+      "zc"
+     ],
+     "right (-X) wall ceiling"
+    ],
+    [
+     950,
+     198.1,
+     [
+      "xr",
+      0,
+      "zc"
+     ],
+     [
+      "xr",
+      7,
+      "zc"
+     ],
+     "right (-X) wall ceiling"
+    ],
+    [
+     1050,
+     157.6,
+     [
+      "xr",
+      0,
+      "zc"
+     ],
+     [
+      "xr",
+      7,
+      "zc"
+     ],
+     "right (-X) wall ceiling"
+    ],
+    [
+     1150,
+     117.3,
+     [
+      "xr",
+      0,
+      "zc"
+     ],
+     [
+      "xr",
+      7,
+      "zc"
+     ],
+     "right (-X) wall ceiling"
+    ],
+    [
+     1250,
+     77.8,
+     [
+      "xr",
+      0,
+      "zc"
+     ],
+     [
+      "xr",
+      7,
+      "zc"
+     ],
+     "right (-X) wall ceiling"
+    ],
+    [
+     1350,
+     39.2,
+     [
+      "xr",
+      0,
+      "zc"
+     ],
+     [
+      "xr",
+      7,
+      "zc"
+     ],
+     "right (-X) wall ceiling"
+    ],
+    [
+     716.5,
+     320,
+     [
+      "xr",
+      1.37,
+      2.84
+     ],
+     [
+      "xr",
+      1.37,
+      5.2
+     ],
+     "far-right corner"
+    ],
+    [
+     716.5,
+     400,
+     [
+      "xr",
+      1.37,
+      2.84
+     ],
+     [
+      "xr",
+      1.37,
+      5.2
+     ],
+     "far-right corner"
+    ],
+    [
+     716.5,
+     480,
+     [
+      "xr",
+      1.37,
+      2.84
+     ],
+     [
+      "xr",
+      1.37,
+      5.2
+     ],
+     "far-right corner"
+    ],
+    [
+     716.5,
+     560,
+     [
+      "xr",
+      1.37,
+      2.84
+     ],
+     [
+      "xr",
+      1.37,
+      5.2
+     ],
+     "far-right corner"
+    ],
+    [
+     244.7,
+     350,
+     [
+      "wc+cw/2",
+      1.37,
+      2.84
+     ],
+     [
+      "wc+cw/2",
+      1.37,
+      5.2
+     ],
+     "window opening (drywall return) +X edge"
+    ],
+    [
+     244.7,
+     450,
+     [
+      "wc+cw/2",
+      1.37,
+      2.84
+     ],
+     [
+      "wc+cw/2",
+      1.37,
+      5.2
+     ],
+     "window opening (drywall return) +X edge"
+    ],
+    [
+     244.7,
+     540,
+     [
+      "wc+cw/2",
+      1.37,
+      2.84
+     ],
+     [
+      "wc+cw/2",
+      1.37,
+      5.2
+     ],
+     "window opening (drywall return) +X edge"
+    ],
+    [
+     455.2,
+     450,
+     [
+      "wc-cw/2",
+      1.37,
+      2.84
+     ],
+     [
+      "wc-cw/2",
+      1.37,
+      5.2
+     ],
+     "window opening (drywall return) -X edge"
+    ],
+    [
+     455.2,
+     540,
+     [
+      "wc-cw/2",
+      1.37,
+      2.84
+     ],
+     [
+      "wc-cw/2",
+      1.37,
+      5.2
+     ],
+     "window opening (drywall return) -X edge"
+    ],
+    [
+     280,
+     269.5,
+     [
+      3,
+      1.37,
+      "ct"
+     ],
+     [
+      10,
+      1.37,
+      "ct"
+     ],
+     "window opening (drywall return) top"
+    ],
+    [
+     350,
+     281.5,
+     [
+      3,
+      1.37,
+      "ct"
+     ],
+     [
+      10,
+      1.37,
+      "ct"
+     ],
+     "window opening (drywall return) top"
+    ],
+    [
+     430,
+     294.7,
+     [
+      3,
+      1.37,
+      "ct"
+     ],
+     [
+      10,
+      1.37,
+      "ct"
+     ],
+     "window opening (drywall return) top"
+    ],
+    [
+     900,
+     694.9,
+     [
+      "xr",
+      0,
+      "2.84+bb"
+     ],
+     [
+      "xr",
+      7,
+      "2.84+bb"
+     ],
+     "right wall bb top"
+    ],
+    [
+     1000,
+     721.8,
+     [
+      "xr",
+      0,
+      "2.84+bb"
+     ],
+     [
+      "xr",
+      7,
+      "2.84+bb"
+     ],
+     "right wall bb top"
+    ],
+    [
+     1100,
+     748.9,
+     [
+      "xr",
+      0,
+      "2.84+bb"
+     ],
+     [
+      "xr",
+      7,
+      "2.84+bb"
+     ],
+     "right wall bb top"
+    ],
+    [
+     900,
+     711.0,
+     [
+      "xr",
+      0,
+      2.84
+     ],
+     [
+      "xr",
+      7,
+      2.84
+     ],
+     "right wall floor"
+    ],
+    [
+     1000,
+     741.2,
+     [
+      "xr",
+      0,
+      2.84
+     ],
+     [
+      "xr",
+      7,
+      2.84
+     ],
+     "right wall floor"
+    ],
+    [
+     1100,
+     770.9,
+     [
+      "xr",
+      0,
+      2.84
+     ],
+     [
+      "xr",
+      7,
+      2.84
+     ],
+     "right wall floor"
+    ],
+    [
+     749.3,
+     400,
+     [
+      "xr",
+      "dy0",
+      2.84
+     ],
+     [
+      "xr",
+      "dy0",
+      5.2
+     ],
+     "door casing far edge"
+    ],
+    [
+     749.3,
+     500,
+     [
+      "xr",
+      "dy0",
+      2.84
+     ],
+     [
+      "xr",
+      "dy0",
+      5.2
+     ],
+     "door casing far edge"
+    ],
+    [
+     749.3,
+     580,
+     [
+      "xr",
+      "dy0",
+      2.84
+     ],
+     [
+      "xr",
+      "dy0",
+      5.2
+     ],
+     "door casing far edge"
+    ],
+    [
+     834.5,
+     400,
+     [
+      "xr",
+      "dy0+dw",
+      2.84
+     ],
+     [
+      "xr",
+      "dy0+dw",
+      5.2
+     ],
+     "door casing near edge"
+    ],
+    [
+     834.5,
+     500,
+     [
+      "xr",
+      "dy0+dw",
+      2.84
+     ],
+     [
+      "xr",
+      "dy0+dw",
+      5.2
+     ],
+     "door casing near edge"
+    ],
+    [
+     834.5,
+     580,
+     [
+      "xr",
+      "dy0+dw",
+      2.84
+     ],
+     [
+      "xr",
+      "dy0+dw",
+      5.2
+     ],
+     "door casing near edge"
+    ],
+    [
+     770,
+     319.9,
+     [
+      "xr",
+      0,
+      "dct"
+     ],
+     [
+      "xr",
+      7,
+      "dct"
+     ],
+     "door casing top"
+    ],
+    [
+     800,
+     311.1,
+     [
+      "xr",
+      0,
+      "dct"
+     ],
+     [
+      "xr",
+      7,
+      "dct"
+     ],
+     "door casing top"
+    ],
+    [
+     825,
+     303.4,
+     [
+      "xr",
+      0,
+      "dct"
+     ],
+     [
+      "xr",
+      7,
+      "dct"
+     ],
+     "door casing top"
+    ]
+   ]
+  }
+ }
+}

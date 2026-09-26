@@ -1,0 +1,374 @@
+{
+ "_note": "Photo 21 (bedroom 21 in the brick bay), tools/intcam_solve.py, level camera (no aspect). Held: the bay front inner face y 1.11 and the bay return inner faces x 8.95 / 12.25 (plan BAY + BWT); floor Z_UP via the far baseboard (height prior). Unknown: the ceiling zc. The camera's distance to the back wall is degenerate with the lens shift (y 4.55-4.80 all fit at 0.34 px); it is held at y 4.62, 0.13 m inside bed21's back-wall face (4.75), with the ceiling at plan Z_C2 5.20 (0.7 px).",
+ "unknowns": {
+  "zc": 5.2,
+  "bbu": 0.105,
+  "xl": 12.25,
+  "xr": 8.95
+ },
+ "priors": {
+  "bbu": [
+   0.105,
+   0.02
+  ],
+  "xl": [
+   12.25,
+   0.001
+  ],
+  "xr": [
+   8.95,
+   0.001
+  ],
+  "zc": [
+   5.2,
+   0.01
+  ]
+ },
+ "photos": {
+  "21": {
+   "size": [
+    1536,
+    1024
+   ],
+   "model": "level",
+   "photo": "../photos/21.jpg",
+   "init": {
+    "loc": [
+     9.0,
+     4.57,
+     3.96
+    ],
+    "yaw": 140.5,
+    "lens": 15.7
+   },
+   "priors": {
+    "shift_x": [
+     0,
+     0.03
+    ],
+    "y": [
+     4.62,
+     0.005
+    ]
+   },
+   "points": [],
+   "lines": [
+    [
+     900,
+     313.5,
+     [
+      0,
+      1.11,
+      "zc"
+     ],
+     [
+      14,
+      1.11,
+      "zc"
+     ],
+     "far (bay front) ceiling"
+    ],
+    [
+     1000,
+     290.3,
+     [
+      0,
+      1.11,
+      "zc"
+     ],
+     [
+      14,
+      1.11,
+      "zc"
+     ],
+     "far (bay front) ceiling"
+    ],
+    [
+     1100,
+     267.6,
+     [
+      0,
+      1.11,
+      "zc"
+     ],
+     [
+      14,
+      1.11,
+      "zc"
+     ],
+     "far (bay front) ceiling"
+    ],
+    [
+     1200,
+     244.6,
+     [
+      0,
+      1.11,
+      "zc"
+     ],
+     [
+      14,
+      1.11,
+      "zc"
+     ],
+     "far (bay front) ceiling"
+    ],
+    [
+     775.6,
+     360,
+     [
+      "xl",
+      1.11,
+      2.84
+     ],
+     [
+      "xl",
+      1.11,
+      5.4
+     ],
+     "far-left corner"
+    ],
+    [
+     775.6,
+     420,
+     [
+      "xl",
+      1.11,
+      2.84
+     ],
+     [
+      "xl",
+      1.11,
+      5.4
+     ],
+     "far-left corner"
+    ],
+    [
+     775.6,
+     500,
+     [
+      "xl",
+      1.11,
+      2.84
+     ],
+     [
+      "xl",
+      1.11,
+      5.4
+     ],
+     "far-left corner"
+    ],
+    [
+     1386.0,
+     360,
+     [
+      "xr",
+      1.11,
+      2.84
+     ],
+     [
+      "xr",
+      1.11,
+      5.4
+     ],
+     "far-right corner"
+    ],
+    [
+     1386.0,
+     420,
+     [
+      "xr",
+      1.11,
+      2.84
+     ],
+     [
+      "xr",
+      1.11,
+      5.4
+     ],
+     "far-right corner"
+    ],
+    [
+     1386.0,
+     500,
+     [
+      "xr",
+      1.11,
+      2.84
+     ],
+     [
+      "xr",
+      1.11,
+      5.4
+     ],
+     "far-right corner"
+    ],
+    [
+     1386.0,
+     600,
+     [
+      "xr",
+      1.11,
+      2.84
+     ],
+     [
+      "xr",
+      1.11,
+      5.4
+     ],
+     "far-right corner"
+    ],
+    [
+     1030,
+     683.2,
+     [
+      0,
+      1.11,
+      "2.84+bbu"
+     ],
+     [
+      14,
+      1.11,
+      "2.84+bbu"
+     ],
+     "far baseboard top"
+    ],
+    [
+     1100,
+     695.1,
+     [
+      0,
+      1.11,
+      "2.84+bbu"
+     ],
+     [
+      14,
+      1.11,
+      "2.84+bbu"
+     ],
+     "far baseboard top"
+    ],
+    [
+     1200,
+     711.4,
+     [
+      0,
+      1.11,
+      "2.84+bbu"
+     ],
+     [
+      14,
+      1.11,
+      "2.84+bbu"
+     ],
+     "far baseboard top"
+    ],
+    [
+     1300,
+     728.1,
+     [
+      0,
+      1.11,
+      "2.84+bbu"
+     ],
+     [
+      14,
+      1.11,
+      "2.84+bbu"
+     ],
+     "far baseboard top"
+    ],
+    [
+     1350,
+     736.2,
+     [
+      0,
+      1.11,
+      "2.84+bbu"
+     ],
+     [
+      14,
+      1.11,
+      "2.84+bbu"
+     ],
+     "far baseboard top"
+    ],
+    [
+     350,
+     202.0,
+     [
+      "xl",
+      -1,
+      "zc"
+     ],
+     [
+      "xl",
+      12,
+      "zc"
+     ],
+     "left wall ceiling"
+    ],
+    [
+     450,
+     235.0,
+     [
+      "xl",
+      -1,
+      "zc"
+     ],
+     [
+      "xl",
+      12,
+      "zc"
+     ],
+     "left wall ceiling"
+    ],
+    [
+     550,
+     267.0,
+     [
+      "xl",
+      -1,
+      "zc"
+     ],
+     [
+      "xl",
+      12,
+      "zc"
+     ],
+     "left wall ceiling"
+    ],
+    [
+     650,
+     299.2,
+     [
+      "xl",
+      -1,
+      "zc"
+     ],
+     [
+      "xl",
+      12,
+      "zc"
+     ],
+     "left wall ceiling"
+    ],
+    [
+     740,
+     330.8,
+     [
+      "xl",
+      -1,
+      "zc"
+     ],
+     [
+      "xl",
+      12,
+      "zc"
+     ],
+     "left wall ceiling"
+    ]
+   ]
+  }
+ }
+}

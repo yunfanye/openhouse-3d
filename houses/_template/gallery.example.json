@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "house": "My house",
+  "render_resolution": [1920, 1080],
+  "notes": "Furniture is staged; hidden dimensions are inferred.",
+  "pairs": [
+    {
+      "photo": 0,
+      "title": "Front exterior",
+      "camera": "hero",
+      "original": "photos/00.jpg",
+      "render": "output/renders/hero.png",
+      "note": "Replace with evidence and unresolved differences.",
+      "render_kind": "whole_house_model"
+    }
+  ]
+}

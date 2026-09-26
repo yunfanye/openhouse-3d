@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>{{TITLE}} · Photo & render comparisons</title>
+  <style>
+    :root{--bg:#111918;--panel:#192321;--line:#34413a;--text:#f0f2e9;--muted:#b1beb5;--accent:#d0e4b2}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:15px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    a{color:inherit;text-underline-offset:4px}button,select{font:inherit}button,a,select,input{-webkit-tap-highlight-color:transparent}
+    button,select{color:var(--text);background:var(--panel);border:1px solid var(--line);border-radius:7px;padding:9px 14px}
+    button{cursor:pointer}button:hover,a.thumbnail:hover{border-color:var(--accent)}button:disabled{opacity:.35;cursor:default}
+    :focus-visible{outline:3px solid var(--accent);outline-offset:4px}[hidden]{display:none!important}
+    main{max-width:1600px;margin:auto;padding:38px 44px 64px}.eyebrow{color:var(--accent);font-size:11px;letter-spacing:.19em;text-transform:uppercase;margin:0 0 12px}
+    header{display:flex;align-items:flex-start;justify-content:space-between;gap:28px;padding-bottom:25px;border-bottom:1px solid var(--line)}
+    h1{font:400 clamp(32px,4vw,54px)/1.1 Georgia,serif;letter-spacing:-.025em;margin:0 0 14px}header p{color:var(--muted);max-width:750px;margin:0}
+    .header-links{display:flex;gap:18px;align-items:center;white-space:nowrap;padding-top:26px;font-size:13px}.badge{font-size:12px;color:var(--accent);padding:5px 11px;border:1px solid #516244;border-radius:20px}
+    .toolbar{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:23px 0}.view-select{display:flex;align-items:center;gap:12px}.view-select label{font-size:12px;color:var(--muted)}
+    select{max-width:380px;min-width:260px;padding-right:30px}.modes{display:flex;gap:4px;border:1px solid var(--line);padding:3px;border-radius:9px}.modes button{border:0;background:transparent;padding:6px 14px}
+    .modes button[aria-pressed=true]{background:var(--accent);color:#17231a}.pair{margin:0 0 36px;scroll-margin-top:20px}.pair-heading{display:flex;justify-content:space-between;align-items:center;gap:15px;margin-bottom:15px}
+    h2{font-size:18px;font-weight:500;margin:0}.pair-heading h2 span{font-size:13px;color:var(--accent);margin-right:13px;font-variant-numeric:tabular-nums}.count{margin:0;font-size:13px;color:var(--muted)}
+    .side-by-side{display:grid;grid-template-columns:1fr 1fr;gap:16px}figure{margin:0;min-width:0;background:var(--panel);border:1px solid var(--line);border-radius:9px;overflow:hidden}
+    figcaption{display:flex;align-items:center;gap:9px;padding:11px 15px;font-size:12px}figcaption a{margin-left:auto;color:var(--muted);font-size:11px;text-decoration:none}
+    .dot{width:6px;height:6px;border-radius:50%;display:inline-block}.original-dot{background:#c0c6c3}.render-dot{background:var(--accent)}
+    .side-by-side img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:contain;background:#182123}
+    .pair-footer{display:flex;align-items:flex-start;justify-content:space-between;gap:35px;margin-top:16px}.pair-footer p{max-width:1000px;color:var(--muted);font-size:12px;margin:0}
+    .download{white-space:nowrap;font-size:12px;color:var(--accent)}.wipe-images{position:relative;max-width:1100px;margin:auto;aspect-ratio:3/2;overflow:hidden;background:#182123;border-radius:8px}
+    .wipe-images img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain}.wipe-original{clip-path:inset(0 calc(100% - var(--split)) 0 0)}
+    .wipe-label{position:absolute;top:15px;background:#111918df;color:white;border:1px solid #69766b;padding:5px 10px;border-radius:5px;font-size:12px;pointer-events:none}.wipe-label.left{left:15px}.wipe-label.right{right:15px}
+    .wipe-divider{position:absolute;left:var(--split);top:0;height:100%;width:2px;background:var(--accent);transform:translateX(-50%);pointer-events:none}
+    .wipe-divider span{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:var(--accent);color:#17231a;font-size:21px;box-shadow:0 1px 8px #0005}
+    .wipe input{position:absolute;inset:0;width:100%;height:100%;margin:0;opacity:0;cursor:ew-resize;touch-action:pan-y}.wipe-images:focus-within{outline:3px solid var(--accent);outline-offset:4px}
+    .wipe-hint{text-align:center;color:var(--muted);font-size:12px;margin:10px 0 0}.navigation{display:flex;justify-content:space-between;align-items:center;gap:18px;margin-top:-13px;margin-bottom:33px}.navigation p{font-size:12px;color:var(--muted);margin:0}
+    .library{border-top:1px solid var(--line);padding-top:27px}.library-heading{display:flex;justify-content:space-between;gap:20px;align-items:baseline;margin-bottom:18px}.library-heading p{margin:0;font-size:12px;color:var(--muted)}
+    .thumbnails{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:12px}.thumbnail{display:block;min-width:0;border:1px solid var(--line);border-radius:6px;overflow:hidden;text-decoration:none;background:var(--panel)}
+    .thumbnail[aria-current=true]{border-color:var(--accent);box-shadow:0 0 0 2px var(--accent)}.thumbnail img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:contain}
+    .thumbnail span{display:flex;gap:8px;padding:8px;font-size:10px;line-height:1.4;color:var(--muted);min-height:44px}.thumbnail b{font-variant-numeric:tabular-nums;color:var(--accent);font-weight:500}
+    .references{margin-top:30px;padding:20px 0;border-top:1px solid var(--line);display:flex;gap:30px;align-items:baseline;color:var(--muted);font-size:12px}.references p{max-width:930px;margin:0}.references a{white-space:nowrap}
+    .footer{font-size:11px;color:var(--muted)}.footer a{margin-right:22px}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+    @media(min-width:1100px){.js .pair-heading{margin-top:3px}}
+    @media(max-width:1050px){main{padding:28px 24px 44px}.thumbnails{grid-template-columns:repeat(6,minmax(0,1fr))}.header-links{flex-direction:column;align-items:flex-end;gap:10px;padding-top:10px}.toolbar{gap:12px}.view-select label{display:none}}
+    @media(max-width:720px){main{padding:24px 16px 36px}header{display:block}.header-links{flex-direction:row;align-items:center;padding-top:18px}header p{font-size:13px}.toolbar{flex-wrap:wrap;padding:19px 0}.view-select{width:100%}select{width:100%;max-width:none;min-width:0}.modes{width:100%}.modes button{flex:1;font-size:13px}.side-by-side{grid-template-columns:1fr;gap:12px}.pair-heading h2{font-size:16px}.pair-heading h2 span{margin-right:8px}.pair-footer{display:block}.download{display:inline-block;margin-top:12px}.navigation p{display:none}.thumbnails{grid-template-columns:repeat(4,minmax(0,1fr));gap:9px}.thumbnail span{display:block;font-size:10px;min-height:55px}.thumbnail b{margin-right:6px}.references{display:block}.references a{display:inline-block;margin-top:12px}.library-heading{display:block}.library-heading p{margin-top:5px}}
+    @media(max-width:420px){.thumbnails{grid-template-columns:repeat(3,minmax(0,1fr))}.count{font-size:11px;white-space:nowrap}}
+    @media(prefers-reduced-motion:no-preference){button,a.thumbnail{transition:border-color .15s,background .15s}}
+    @media print{body{background:#fff;color:#111}main{padding:0}.toolbar,.navigation,.library,.header-links,.download,.wipe,.footer{display:none!important}.pair[hidden]{display:block!important}.side-by-side[hidden]{display:grid!important}.side-by-side{grid-template-columns:1fr 1fr}.pair{break-inside:avoid;margin:24px 0}.pair-footer p,header p{color:#444}.pair-heading h2 span{color:#444}}
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <div><p class="eyebrow">{{TITLE}}</p><h1>{{HEADING}}</h1><p>{{DESCRIPTION}}</p></div>
+    <div class="header-links"><span class="badge">{{COUNT}} photo pairs</span><a href="overview.jpg" target="_blank" rel="noopener">View all pairs ↗</a></div>
+  </header>
+  <div class="toolbar" hidden>
+    <div class="view-select"><label for="photo-select">Choose a view</label><select id="photo-select" aria-label="Choose a photo comparison"><!-- OPTIONS --></select></div>
+    <div class="modes" role="group" aria-label="Comparison mode"><button id="side-mode" type="button" aria-pressed="true">Side by side</button><button id="wipe-mode" type="button" aria-pressed="false">Comparison slider</button></div>
+  </div>
+  <div id="pairs"><!-- PAIRS --></div>
+  <div class="navigation" hidden><button id="previous" type="button">← Previous photo</button><p>Use ← → keys to browse the photographs</p><button id="next" type="button">Next photo →</button></div>
+  <p id="announcement" class="sr-only" aria-live="polite" aria-atomic="true"></p>
+  <section class="library" aria-labelledby="library-title">
+    <div class="library-heading"><h2 id="library-title">The complete photo collection</h2><p>Choose any original to see its render.</p></div>
+    <div class="thumbnails"><!-- THUMBNAILS --></div>
+  </section>
+  <aside class="references" aria-label="About the comparisons"><p>{{NOTES}}</p>{{REFERENCES}}</aside>
+  <footer class="footer"><a href="README.md">About this collection</a><a href="manifest.json">Photo & render index</a><span>Original photos + Blender renders · Works offline</span></footer>
+</main>
+<script>
+(() => {
+  const pairs = [...document.querySelectorAll('.pair')];
+  if (!pairs.length) return;
+  document.documentElement.classList.add('js');
+  const select = document.querySelector('#photo-select');
+  const previous = document.querySelector('#previous');
+  const next = document.querySelector('#next');
+  const thumbnails = [...document.querySelectorAll('[data-select]')];
+  const sideButton = document.querySelector('#side-mode');
+  const wipeButton = document.querySelector('#wipe-mode');
+  let current = 0;
+  let mode = 'side';
+  document.querySelector('.toolbar').hidden = false;
+  document.querySelector('.navigation').hidden = false;
+
+  function setMode(value) {
+    mode = value;
+    sideButton.setAttribute('aria-pressed', String(mode === 'side'));
+    wipeButton.setAttribute('aria-pressed', String(mode === 'wipe'));
+    for (const pair of pairs) {
+      pair.querySelector('.side-by-side').hidden = mode !== 'side';
+      pair.querySelector('.wipe').hidden = mode !== 'wipe';
+    }
+  }
+
+  function show(index, updateHash = true, scroll = false) {
+    current = Math.max(0, Math.min(pairs.length - 1, index));
+    pairs.forEach((pair, i) => { pair.hidden = i !== current; });
+    thumbnails.forEach((thumb, i) => {
+      if (i === current) thumb.setAttribute('aria-current', 'true');
+      else thumb.removeAttribute('aria-current');
+    });
+    select.value = pairs[current].dataset.photo;
+    previous.disabled = current === 0;
+    next.disabled = current === pairs.length - 1;
+    document.querySelector('#announcement').textContent = `Photo ${current + 1} of ${pairs.length}: ${pairs[current].querySelector('h2').textContent}`;
+    if (updateHash) {
+      // File URLs support hash navigation too; a failing history API must never
+      // prevent the pair controls from working when the ZIP is opened offline.
+      try { history.replaceState(null, '', `#${pairs[current].id}`); }
+      catch { location.hash = pairs[current].id; }
+    }
+    if (scroll) document.querySelector('.toolbar').scrollIntoView({block:'start'});
+  }
+
+  function fromHash() {
+    const match = location.hash.match(/^#photo-(\d+)$/);
+    const index = match ? pairs.findIndex(pair => Number(pair.dataset.photo) === Number(match[1])) : 0;
+    show(index < 0 ? 0 : index, false);
+  }
+  select.addEventListener('change', () => show(pairs.findIndex(pair => pair.dataset.photo === select.value)));
+  previous.addEventListener('click', () => show(current - 1));
+  next.addEventListener('click', () => show(current + 1));
+  sideButton.addEventListener('click', () => setMode('side'));
+  wipeButton.addEventListener('click', () => setMode('wipe'));
+  thumbnails.forEach(thumb => thumb.addEventListener('click', event => {
+    // Keep open-in-new-tab and copy-link behavior for the numbered references.
+    if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+    event.preventDefault();
+    show(pairs.findIndex(pair => pair.dataset.photo === thumb.dataset.select), true, true);
+  }));
+  document.querySelectorAll('.wipe input').forEach(input => {
+    input.addEventListener('input', () => {
+      input.closest('.wipe-images').style.setProperty('--split', `${input.value}%`);
+      input.setAttribute('aria-valuetext', `${input.value}% original photo`);
+    });
+  });
+  document.addEventListener('keydown', event => {
+    if (event.defaultPrevented || event.altKey || event.ctrlKey || event.metaKey || event.shiftKey) return;
+    if (event.target.closest('input,select,textarea,button,[contenteditable]')) return;
+    if (event.key === 'ArrowLeft') { event.preventDefault(); show(current - 1); }
+    if (event.key === 'ArrowRight') { event.preventDefault(); show(current + 1); }
+  });
+  window.addEventListener('hashchange', fromHash);
+  fromHash();
+})();
+</script>
+</body>
+</html>

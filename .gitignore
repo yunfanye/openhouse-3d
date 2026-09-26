@@ -1,0 +1,31 @@
+# Generated outputs belong in release assets, never source commits.
+houses/*/output/
+# New house photos stay local by default; the supplied example references are tracked.
+houses/*/photos/
+!houses/alpine/photos/
+!houses/stanford/photos/
+!houses/walsh/photos/
+!houses/webster/photos/
+# Downloaded photographic maps are reproducible from their manifests.
+houses/webster/assets/*.jpg
+houses/webster/assets/*.hdr
+scratch/
+.venv/
+venv/
+build/
+dist/
+*.egg-info/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.coverage
+*.blend[0-9]*
+.DS_Store
+.claude/
+.omx/
+.env
+.env.*
+!.env.example
+houses/stanford/assets/*.hdr
+houses/*/.gallery_review.json

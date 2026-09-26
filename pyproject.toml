@@ -1,0 +1,53 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "openhouse-3d"
+version = "0.1.0"
+description = "Turn real-estate listing photos into a procedural 3D house and a rendered walkthrough video with headless Blender"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "Yunfan Ye"}]
+keywords = [
+  "real-estate", "listing-photos", "3d-walkthrough", "virtual-tour", "house-tour",
+  "blender", "bpy", "cycles", "archviz", "architectural-visualization",
+  "3d-reconstruction", "camera-calibration", "procedural-modeling", "virtual-staging",
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Topic :: Multimedia :: Graphics :: 3D Modeling",
+  "Topic :: Multimedia :: Graphics :: 3D Rendering",
+  "Topic :: Multimedia :: Video",
+]
+dependencies = ["Pillow>=10,<13", "numpy>=1.24,<3", "imageio-ffmpeg>=0.6,<0.7"]
+
+[project.urls]
+Homepage = "https://yunfanye.github.io/openhouse-3d/"
+Repository = "https://github.com/yunfanye/openhouse-3d"
+Issues = "https://github.com/yunfanye/openhouse-3d/issues"
+Releases = "https://github.com/yunfanye/openhouse-3d/releases"
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<9", "ruff>=0.12,<1"]
+
+[tool.setuptools.packages.find]
+include = ["archviz*", "houses*"]
+exclude = ["houses.*.output*", "houses.*.photos*"]
+
+[tool.setuptools.package-data]
+archviz = ["templates/*.html"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+target-version = "py39"
+extend-exclude = ["scratch", "output"]
+
+[tool.ruff.lint]
+select = ["E9", "F63", "F7", "F82"]

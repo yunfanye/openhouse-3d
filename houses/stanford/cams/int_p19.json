@@ -1,0 +1,411 @@
+{
+ "_note": "Photo 19 (bedroom 19 from its doorway), tools/intcam_solve.py, level camera. Held: the right (+X) wall x 12.35, the rear wall y 11.65, the -X wall x 8.60 (XB19), ceiling 5.20, the rear window centre (plan rear_up_r, prior). The scale in this photo is weak (the window is 0.7 m from the corner): with the -X wall and the ceiling both free, the pair trades (8.60 / 5.39 vs 9.10 / 5.20); the fan centred in the room (check row) favours x ~8.85. Adopted: a compromise with a soft room-centred fan (weight 0.1) and xl prior 8.60 +/- 0.15 -> xl 8.82, shift_x ~0.",
+ "unknowns": {
+  "zc": 5.2,
+  "xl": 8.6,
+  "wc": 11.673,
+  "ww": 0.91,
+  "bb": 0.1
+ },
+ "priors": {
+  "wc": [
+   11.673,
+   0.02
+  ],
+  "bb": [
+   0.1,
+   0.02
+  ],
+  "zc": [
+   5.2,
+   0.01
+  ],
+  "xl": [
+   8.6,
+   0.15
+  ]
+ },
+ "photos": {
+  "19": {
+   "size": [
+    1536,
+    1024
+   ],
+   "model": "level",
+   "photo": "../photos/19.jpg",
+   "init": {
+    "loc": [
+     8.83,
+     7.22,
+     3.62
+    ],
+    "yaw": 40,
+    "lens": 17.3
+   },
+   "priors": {
+    "shift_x": [
+     0,
+     0.03
+    ]
+   },
+   "points": [
+    [
+     704,
+     60,
+     "(xl+12.35)/2",
+     9.295,
+     "zc",
+     "fan canopy top, room centre (soft)",
+     0.1
+    ]
+   ],
+   "lines": [
+    [
+     120,
+     163.5,
+     [
+      0,
+      11.65,
+      "zc"
+     ],
+     [
+      14,
+      11.65,
+      "zc"
+     ],
+     "far (rear) ceiling"
+    ],
+    [
+     250,
+     193.7,
+     [
+      0,
+      11.65,
+      "zc"
+     ],
+     [
+      14,
+      11.65,
+      "zc"
+     ],
+     "far (rear) ceiling"
+    ],
+    [
+     400,
+     227.8,
+     [
+      0,
+      11.65,
+      "zc"
+     ],
+     [
+      14,
+      11.65,
+      "zc"
+     ],
+     "far (rear) ceiling"
+    ],
+    [
+     550,
+     262.0,
+     [
+      0,
+      11.65,
+      "zc"
+     ],
+     [
+      14,
+      11.65,
+      "zc"
+     ],
+     "far (rear) ceiling"
+    ],
+    [
+     900,
+     243.2,
+     [
+      12.35,
+      5,
+      "zc"
+     ],
+     [
+      12.35,
+      12,
+      "zc"
+     ],
+     "right wall ceiling"
+    ],
+    [
+     1000,
+     207.6,
+     [
+      12.35,
+      5,
+      "zc"
+     ],
+     [
+      12.35,
+      12,
+      "zc"
+     ],
+     "right wall ceiling"
+    ],
+    [
+     1100,
+     172.7,
+     [
+      12.35,
+      5,
+      "zc"
+     ],
+     [
+      12.35,
+      12,
+      "zc"
+     ],
+     "right wall ceiling"
+    ],
+    [
+     1200,
+     137.2,
+     [
+      12.35,
+      5,
+      "zc"
+     ],
+     [
+      12.35,
+      12,
+      "zc"
+     ],
+     "right wall ceiling"
+    ],
+    [
+     1300,
+     101.1,
+     [
+      12.35,
+      5,
+      "zc"
+     ],
+     [
+      12.35,
+      12,
+      "zc"
+     ],
+     "right wall ceiling"
+    ],
+    [
+     1400,
+     65.4,
+     [
+      12.35,
+      5,
+      "zc"
+     ],
+     [
+      12.35,
+      12,
+      "zc"
+     ],
+     "right wall ceiling"
+    ],
+    [
+     1500,
+     30.2,
+     [
+      12.35,
+      5,
+      "zc"
+     ],
+     [
+      12.35,
+      12,
+      "zc"
+     ],
+     "right wall ceiling"
+    ],
+    [
+     62.3,
+     250,
+     [
+      "xl",
+      11.65,
+      2.84
+     ],
+     [
+      "xl",
+      11.65,
+      5.4
+     ],
+     "far-left corner"
+    ],
+    [
+     62.3,
+     350,
+     [
+      "xl",
+      11.65,
+      2.84
+     ],
+     [
+      "xl",
+      11.65,
+      5.4
+     ],
+     "far-left corner"
+    ],
+    [
+     62.3,
+     450,
+     [
+      "xl",
+      11.65,
+      2.84
+     ],
+     [
+      "xl",
+      11.65,
+      5.4
+     ],
+     "far-left corner"
+    ],
+    [
+     729.5,
+     350,
+     [
+      12.35,
+      11.65,
+      2.84
+     ],
+     [
+      12.35,
+      11.65,
+      5.4
+     ],
+     "far-right corner"
+    ],
+    [
+     729.5,
+     450,
+     [
+      12.35,
+      11.65,
+      2.84
+     ],
+     [
+      12.35,
+      11.65,
+      5.4
+     ],
+     "far-right corner"
+    ],
+    [
+     593.0,
+     380,
+     [
+      "wc-ww/2",
+      11.65,
+      2.84
+     ],
+     [
+      "wc-ww/2",
+      11.65,
+      5.4
+     ],
+     "win casing W"
+    ],
+    [
+     593.0,
+     480,
+     [
+      "wc-ww/2",
+      11.65,
+      2.84
+     ],
+     [
+      "wc-ww/2",
+      11.65,
+      5.4
+     ],
+     "win casing W"
+    ],
+    [
+     703.0,
+     380,
+     [
+      "wc+ww/2",
+      11.65,
+      2.84
+     ],
+     [
+      "wc+ww/2",
+      11.65,
+      5.4
+     ],
+     "win casing E"
+    ],
+    [
+     703.0,
+     480,
+     [
+      "wc+ww/2",
+      11.65,
+      2.84
+     ],
+     [
+      "wc+ww/2",
+      11.65,
+      5.4
+     ],
+     "win casing E"
+    ],
+    [
+     1160,
+     716.8,
+     [
+      12.35,
+      5,
+      2.84
+     ],
+     [
+      12.35,
+      12,
+      2.84
+     ],
+     "right wall floor (bb bottom)"
+    ],
+    [
+     1175,
+     720.1,
+     [
+      12.35,
+      5,
+      2.84
+     ],
+     [
+      12.35,
+      12,
+      2.84
+     ],
+     "right wall floor (bb bottom)"
+    ],
+    [
+     1160,
+     699.9,
+     [
+      12.35,
+      5,
+      "2.84+bb"
+     ],
+     [
+      12.35,
+      12,
+      "2.84+bb"
+     ],
+     "right wall bb top"
+    ]
+   ]
+  }
+ }
+}

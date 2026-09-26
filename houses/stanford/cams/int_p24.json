@@ -1,0 +1,595 @@
+{
+ "_note": "Photo 24 (garage from the open door, yawed ~36 deg to the back-left corner) with tools/intcam_solve.py: level camera + shift. Fixed: garage left wall inner face x -1.15, rear wall y 6.35 (plan GAR), slab at the rear wall -0.10; the door's left vertical track at (0.50, 0.30). Unknowns: the garage ceiling zcg (prior 2.55), the wall shelf's front edge (a Y-line, x prior -0.85) and the two slab control joints (a Y-joint at jx, an X-joint at jy, on the slab at zj, prior -0.245 from INT_FRONT's curb reading) - they fix the two vanishing points.",
+ "unknowns": {
+  "zcg": 2.55,
+  "xs": -0.85,
+  "zs": 1.75,
+  "jx": 2.3,
+  "jy": 3.2,
+  "zj": -0.15
+ },
+ "priors": {
+  "zcg": [
+   2.55,
+   0.08
+  ],
+  "xs": [
+   -0.85,
+   0.08
+  ],
+  "zj": [
+   -0.245,
+   0.02
+  ]
+ },
+ "photos": {
+  "24": {
+   "size": [
+    1536,
+    1024
+   ],
+   "model": "level",
+   "photo": "../photos/24.jpg",
+   "init": {
+    "loc": [
+     2.5,
+     0.3,
+     1.5
+    ],
+    "yaw": -40,
+    "lens": 18
+   },
+   "priors": {
+    "shift_x": [
+     0,
+     0.05
+    ]
+   },
+   "points": [
+    [
+     733,
+     385,
+     -1.15,
+     6.35,
+     "zcg",
+     "back-left corner top"
+    ],
+    [
+     1545,
+     450,
+     5.85,
+     6.35,
+     1.2,
+     "#back-right corner just off the right edge (check)"
+    ]
+   ],
+   "lines": [
+    [
+     1050,
+     334.7,
+     [
+      -2,
+      6.35,
+      "zcg"
+     ],
+     [
+      6,
+      6.35,
+      "zcg"
+     ],
+     "rear ceiling"
+    ],
+    [
+     1150,
+     318.8,
+     [
+      -2,
+      6.35,
+      "zcg"
+     ],
+     [
+      6,
+      6.35,
+      "zcg"
+     ],
+     "rear ceiling"
+    ],
+    [
+     1250,
+     303.2,
+     [
+      -2,
+      6.35,
+      "zcg"
+     ],
+     [
+      6,
+      6.35,
+      "zcg"
+     ],
+     "rear ceiling"
+    ],
+    [
+     1350,
+     287.6,
+     [
+      -2,
+      6.35,
+      "zcg"
+     ],
+     [
+      6,
+      6.35,
+      "zcg"
+     ],
+     "rear ceiling"
+    ],
+    [
+     1450,
+     271.8,
+     [
+      -2,
+      6.35,
+      "zcg"
+     ],
+     [
+      6,
+      6.35,
+      "zcg"
+     ],
+     "rear ceiling"
+    ],
+    [
+     1520,
+     260.6,
+     [
+      -2,
+      6.35,
+      "zcg"
+     ],
+     [
+      6,
+      6.35,
+      "zcg"
+     ],
+     "rear ceiling"
+    ],
+    [
+     1010,
+     617.1,
+     [
+      -2,
+      6.35,
+      -0.1
+     ],
+     [
+      6,
+      6.35,
+      -0.1
+     ],
+     "rear wall bottom (curb top = Z_GAR)"
+    ],
+    [
+     1025,
+     618.4,
+     [
+      -2,
+      6.35,
+      -0.1
+     ],
+     [
+      6,
+      6.35,
+      -0.1
+     ],
+     "rear wall bottom (curb top = Z_GAR)"
+    ],
+    [
+     1085,
+     623.9,
+     [
+      -2,
+      6.35,
+      -0.1
+     ],
+     [
+      6,
+      6.35,
+      -0.1
+     ],
+     "rear wall bottom (curb top = Z_GAR)"
+    ],
+    [
+     1180,
+     632.4,
+     [
+      -2,
+      6.35,
+      -0.1
+     ],
+     [
+      6,
+      6.35,
+      -0.1
+     ],
+     "rear wall bottom (curb top = Z_GAR)"
+    ],
+    [
+     1200,
+     634.1,
+     [
+      -2,
+      6.35,
+      -0.1
+     ],
+     [
+      6,
+      6.35,
+      -0.1
+     ],
+     "rear wall bottom (curb top = Z_GAR)"
+    ],
+    [
+     1225,
+     636.3,
+     [
+      -2,
+      6.35,
+      -0.1
+     ],
+     [
+      6,
+      6.35,
+      -0.1
+     ],
+     "rear wall bottom (curb top = Z_GAR)"
+    ],
+    [
+     1330,
+     645.8,
+     [
+      -2,
+      6.35,
+      -0.1
+     ],
+     [
+      6,
+      6.35,
+      -0.1
+     ],
+     "rear wall bottom (curb top = Z_GAR)"
+    ],
+    [
+     1420,
+     654.1,
+     [
+      -2,
+      6.35,
+      -0.1
+     ],
+     [
+      6,
+      6.35,
+      -0.1
+     ],
+     "rear wall bottom (curb top = Z_GAR)"
+    ],
+    [
+     732.7,
+     400,
+     [
+      -1.15,
+      6.35,
+      -0.2
+     ],
+     [
+      -1.15,
+      6.35,
+      2.5
+     ],
+     "back-left corner"
+    ],
+    [
+     733.0,
+     450,
+     [
+      -1.15,
+      6.35,
+      -0.2
+     ],
+     [
+      -1.15,
+      6.35,
+      2.5
+     ],
+     "back-left corner"
+    ],
+    [
+     320,
+     420.8,
+     [
+      "xs",
+      0,
+      "zs"
+     ],
+     [
+      "xs",
+      12,
+      "zs"
+     ],
+     "shelf edge (Y-line, position free)"
+    ],
+    [
+     400,
+     429.8,
+     [
+      "xs",
+      0,
+      "zs"
+     ],
+     [
+      "xs",
+      12,
+      "zs"
+     ],
+     "shelf edge (Y-line, position free)"
+    ],
+    [
+     480,
+     434.0,
+     [
+      "xs",
+      0,
+      "zs"
+     ],
+     [
+      "xs",
+      12,
+      "zs"
+     ],
+     "shelf edge (Y-line, position free)"
+    ],
+    [
+     560,
+     441.9,
+     [
+      "xs",
+      0,
+      "zs"
+     ],
+     [
+      "xs",
+      12,
+      "zs"
+     ],
+     "shelf edge (Y-line, position free)"
+    ],
+    [
+     8.9,
+     500,
+     [
+      0.5,
+      0.3,
+      -0.2
+     ],
+     [
+      0.5,
+      0.3,
+      2.3
+     ],
+     "door track (x 0.50, y 0.30)"
+    ],
+    [
+     8.6,
+     600,
+     [
+      0.5,
+      0.3,
+      -0.2
+     ],
+     [
+      0.5,
+      0.3,
+      2.3
+     ],
+     "door track (x 0.50, y 0.30)"
+    ],
+    [
+     1008,
+     660,
+     [
+      "jx",
+      0,
+      "zj"
+     ],
+     [
+      "jx",
+      12,
+      "zj"
+     ],
+     "slab joint along Y (x free)"
+    ],
+    [
+     940,
+     690,
+     [
+      "jx",
+      0,
+      "zj"
+     ],
+     [
+      "jx",
+      12,
+      "zj"
+     ],
+     "slab joint along Y (x free)"
+    ],
+    [
+     873,
+     720,
+     [
+      "jx",
+      0,
+      "zj"
+     ],
+     [
+      "jx",
+      12,
+      "zj"
+     ],
+     "slab joint along Y (x free)"
+    ],
+    [
+     784,
+     760,
+     [
+      "jx",
+      0,
+      "zj"
+     ],
+     [
+      "jx",
+      12,
+      "zj"
+     ],
+     "slab joint along Y (x free)"
+    ],
+    [
+     700,
+     800,
+     [
+      "jx",
+      0,
+      "zj"
+     ],
+     [
+      "jx",
+      12,
+      "zj"
+     ],
+     "slab joint along Y (x free)"
+    ],
+    [
+     600,
+     671,
+     [
+      -2,
+      "jy",
+      "zj"
+     ],
+     [
+      6,
+      "jy",
+      "zj"
+     ],
+     "slab joint along X (y free)"
+    ],
+    [
+     700,
+     685,
+     [
+      -2,
+      "jy",
+      "zj"
+     ],
+     [
+      6,
+      "jy",
+      "zj"
+     ],
+     "slab joint along X (y free)"
+    ],
+    [
+     800,
+     707,
+     [
+      -2,
+      "jy",
+      "zj"
+     ],
+     [
+      6,
+      "jy",
+      "zj"
+     ],
+     "slab joint along X (y free)"
+    ],
+    [
+     1000,
+     748,
+     [
+      -2,
+      "jy",
+      "zj"
+     ],
+     [
+      6,
+      "jy",
+      "zj"
+     ],
+     "slab joint along X (y free)"
+    ],
+    [
+     1100,
+     768,
+     [
+      -2,
+      "jy",
+      "zj"
+     ],
+     [
+      6,
+      "jy",
+      "zj"
+     ],
+     "slab joint along X (y free)"
+    ],
+    [
+     1200,
+     791,
+     [
+      -2,
+      "jy",
+      "zj"
+     ],
+     [
+      6,
+      "jy",
+      "zj"
+     ],
+     "slab joint along X (y free)"
+    ],
+    [
+     1300,
+     810,
+     [
+      -2,
+      "jy",
+      "zj"
+     ],
+     [
+      6,
+      "jy",
+      "zj"
+     ],
+     "slab joint along X (y free)"
+    ],
+    [
+     1400,
+     831,
+     [
+      -2,
+      "jy",
+      "zj"
+     ],
+     [
+      6,
+      "jy",
+      "zj"
+     ],
+     "slab joint along X (y free)"
+    ]
+   ]
+  }
+ }
+}

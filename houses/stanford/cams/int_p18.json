@@ -1,0 +1,467 @@
+{
+ "_note": "Photo 18 (primary bath from its doorway), tools/intcam_solve.py, level camera. Held: the vanity wall x 0.15 (the house's left wall, inner face), the far wall y 3.96 (interior_upper YBF0), ceiling 5.20 / floor 2.84 (the upper ceiling from 16/17/21), vanity depth 0.56 (prior). Unknowns: baseboard height, the counter's lower front edge height zcu (a Y-line only fixes the ratio of its offset and height, hence the depth prior), the mirror's far edge my0.",
+ "unknowns": {
+  "zc": 5.2,
+  "bb": 0.1,
+  "dv": 0.56,
+  "zcu": 0.84,
+  "my0": 4.7,
+  "vy0": 4.12
+ },
+ "priors": {
+  "zc": [
+   5.2,
+   0.01
+  ],
+  "bb": [
+   0.1,
+   0.02
+  ],
+  "dv": [
+   0.56,
+   0.02
+  ]
+ },
+ "photos": {
+  "18": {
+   "size": [
+    1536,
+    1024
+   ],
+   "model": "level",
+   "photo": "../photos/18.jpg",
+   "init": {
+    "loc": [
+     1.48,
+     6.34,
+     3.82
+    ],
+    "yaw": -149,
+    "lens": 15.85
+   },
+   "priors": {
+    "shift_x": [
+     0,
+     0.03
+    ]
+   },
+   "points": [
+    [
+     676,
+     591,
+     "0.15+dv",
+     "vy0",
+     "2.84+zcu+0.035",
+     "#counter far-front corner (top of edge)"
+    ]
+   ],
+   "lines": [
+    [
+     721.0,
+     250,
+     [
+      0.15,
+      3.96,
+      2.84
+     ],
+     [
+      0.15,
+      3.96,
+      5.2
+     ],
+     "far/right corner"
+    ],
+    [
+     721.0,
+     350,
+     [
+      0.15,
+      3.96,
+      2.84
+     ],
+     [
+      0.15,
+      3.96,
+      5.2
+     ],
+     "far/right corner"
+    ],
+    [
+     721.0,
+     450,
+     [
+      0.15,
+      3.96,
+      2.84
+     ],
+     [
+      0.15,
+      3.96,
+      5.2
+     ],
+     "far/right corner"
+    ],
+    [
+     721.0,
+     540,
+     [
+      0.15,
+      3.96,
+      2.84
+     ],
+     [
+      0.15,
+      3.96,
+      5.2
+     ],
+     "far/right corner"
+    ],
+    [
+     250,
+     31.6,
+     [
+      -1,
+      3.96,
+      "zc"
+     ],
+     [
+      4,
+      3.96,
+      "zc"
+     ],
+     "far wall ceiling"
+    ],
+    [
+     350,
+     63.4,
+     [
+      -1,
+      3.96,
+      "zc"
+     ],
+     [
+      4,
+      3.96,
+      "zc"
+     ],
+     "far wall ceiling"
+    ],
+    [
+     450,
+     96.5,
+     [
+      -1,
+      3.96,
+      "zc"
+     ],
+     [
+      4,
+      3.96,
+      "zc"
+     ],
+     "far wall ceiling"
+    ],
+    [
+     550,
+     128.0,
+     [
+      -1,
+      3.96,
+      "zc"
+     ],
+     [
+      4,
+      3.96,
+      "zc"
+     ],
+     "far wall ceiling"
+    ],
+    [
+     650,
+     159.3,
+     [
+      -1,
+      3.96,
+      "zc"
+     ],
+     [
+      4,
+      3.96,
+      "zc"
+     ],
+     "far wall ceiling"
+    ],
+    [
+     700,
+     175.5,
+     [
+      -1,
+      3.96,
+      "zc"
+     ],
+     [
+      4,
+      3.96,
+      "zc"
+     ],
+     "far wall ceiling"
+    ],
+    [
+     740,
+     164.9,
+     [
+      0.15,
+      2,
+      "zc"
+     ],
+     [
+      0.15,
+      7,
+      "zc"
+     ],
+     "right wall ceiling"
+    ],
+    [
+     780,
+     130.4,
+     [
+      0.15,
+      2,
+      "zc"
+     ],
+     [
+      0.15,
+      7,
+      "zc"
+     ],
+     "right wall ceiling"
+    ],
+    [
+     820,
+     96.0,
+     [
+      0.15,
+      2,
+      "zc"
+     ],
+     [
+      0.15,
+      7,
+      "zc"
+     ],
+     "right wall ceiling"
+    ],
+    [
+     350,
+     798.5,
+     [
+      -1,
+      3.96,
+      "2.84+bb"
+     ],
+     [
+      4,
+      3.96,
+      "2.84+bb"
+     ],
+     "far baseboard top"
+    ],
+    [
+     450,
+     778.1,
+     [
+      -1,
+      3.96,
+      "2.84+bb"
+     ],
+     [
+      4,
+      3.96,
+      "2.84+bb"
+     ],
+     "far baseboard top"
+    ],
+    [
+     550,
+     757.2,
+     [
+      -1,
+      3.96,
+      "2.84+bb"
+     ],
+     [
+      4,
+      3.96,
+      "2.84+bb"
+     ],
+     "far baseboard top"
+    ],
+    [
+     350,
+     826.7,
+     [
+      -1,
+      3.96,
+      2.84
+     ],
+     [
+      4,
+      3.96,
+      2.84
+     ],
+     "far floor"
+    ],
+    [
+     450,
+     804.2,
+     [
+      -1,
+      3.96,
+      2.84
+     ],
+     [
+      4,
+      3.96,
+      2.84
+     ],
+     "far floor"
+    ],
+    [
+     550,
+     782.0,
+     [
+      -1,
+      3.96,
+      2.84
+     ],
+     [
+      4,
+      3.96,
+      2.84
+     ],
+     "far floor"
+    ],
+    [
+     700,
+     604.0,
+     [
+      "0.15+dv",
+      2,
+      "2.84+zcu"
+     ],
+     [
+      "0.15+dv",
+      7,
+      "2.84+zcu"
+     ],
+     "counter front, lower edge"
+    ],
+    [
+     800,
+     630.1,
+     [
+      "0.15+dv",
+      2,
+      "2.84+zcu"
+     ],
+     [
+      "0.15+dv",
+      7,
+      "2.84+zcu"
+     ],
+     "counter front, lower edge"
+    ],
+    [
+     1000,
+     682.1,
+     [
+      "0.15+dv",
+      2,
+      "2.84+zcu"
+     ],
+     [
+      "0.15+dv",
+      7,
+      "2.84+zcu"
+     ],
+     "counter front, lower edge"
+    ],
+    [
+     1200,
+     734.1,
+     [
+      "0.15+dv",
+      2,
+      "2.84+zcu"
+     ],
+     [
+      "0.15+dv",
+      7,
+      "2.84+zcu"
+     ],
+     "counter front, lower edge"
+    ],
+    [
+     1400,
+     785.7,
+     [
+      "0.15+dv",
+      2,
+      "2.84+zcu"
+     ],
+     [
+      "0.15+dv",
+      7,
+      "2.84+zcu"
+     ],
+     "counter front, lower edge"
+    ],
+    [
+     836.8,
+     300,
+     [
+      0.156,
+      "my0",
+      2.84
+     ],
+     [
+      0.156,
+      "my0",
+      5.2
+     ],
+     "mirror far edge"
+    ],
+    [
+     836.8,
+     400,
+     [
+      0.156,
+      "my0",
+      2.84
+     ],
+     [
+      0.156,
+      "my0",
+      5.2
+     ],
+     "mirror far edge"
+    ],
+    [
+     836.8,
+     500,
+     [
+      0.156,
+      "my0",
+      2.84
+     ],
+     [
+      0.156,
+      "my0",
+      5.2
+     ],
+     "mirror far edge"
+    ]
+   ]
+  }
+ }
+}

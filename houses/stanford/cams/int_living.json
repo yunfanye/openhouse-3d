@@ -1,0 +1,1623 @@
+{
+ "_note": "Joint solve of photos 04, 05, 06 (tools/intcam_solve.py; level cameras + lens shift, shift_x prior 0 +/- 0.03). Anchors: the door wall's inner face y 1.754 with the entry leaf (36 x 80 in, hinge edge x 7.31, leaf plane y 1.684), and the living window wall's inner face yw = 1.11 held at the exterior solve (EXT: bay brick face 0.86 + 0.25) - photo 04 alone cannot fix that depth (a 7 cm leaf/wall parallax; free it gives 1.25 +/- 0.08). zc held near the main-floor joint value 2.437. Free: east wall xe, fruit / pony-wall face yf (= ST_Y0), fruit-wall W end xf0, bay-W return inner face xbw, foyer W wall xfw and its N end ycn. The powder door (seen in 05 and 06: casing edges + the leaf's bottom line) is a shared unknown (wall y pwy, casing outer x pdx0..pdx1): it pins 06's camera x, which the far walls alone leave loose (+/- 0.2 m).",
+ "unknowns": {
+  "yw": 1.11,
+  "xe": 12.3,
+  "yf": 4.87,
+  "xf0": 11.0,
+  "xbw": 8.95,
+  "xfw": 7.15,
+  "dx0": 7.31,
+  "zc": 2.46,
+  "bb": 0.085,
+  "ycn": 4.0,
+  "pwy": 5.87,
+  "pdx0": 8.6,
+  "pdx1": 9.45
+ },
+ "priors": {
+  "dx0": [
+   7.31,
+   0.1
+  ],
+  "zc": [
+   2.437,
+   0.01
+  ],
+  "bb": [
+   0.085,
+   0.02
+  ],
+  "yw": [
+   1.11,
+   0.003
+  ],
+  "pwy": [
+   5.87,
+   0.5
+  ]
+ },
+ "photos": {
+  "04": {
+   "size": [
+    1536,
+    1024
+   ],
+   "model": "level",
+   "photo": "../photos/04.jpg",
+   "init": {
+    "loc": [
+     9.1,
+     4.6,
+     1.05
+    ],
+    "yaw": 180,
+    "lens": 17
+   },
+   "priors": {
+    "shift_x": [
+     0,
+     0.03
+    ]
+   },
+   "points": [
+    [
+     1262,
+     228,
+     "dx0",
+     1.684,
+     2.03,
+     "leaf TL (hinge)"
+    ],
+    [
+     1022,
+     228,
+     "dx0+0.914",
+     1.684,
+     2.03,
+     "leaf TR"
+    ],
+    [
+     1262,
+     759,
+     "dx0",
+     1.684,
+     0.02,
+     "leaf BL"
+    ],
+    [
+     1022,
+     759,
+     "dx0+0.914",
+     1.684,
+     0.02,
+     "leaf BR"
+    ]
+   ],
+   "lines": [
+    [
+     950,
+     121.8,
+     [
+      0,
+      1.754,
+      "zc"
+     ],
+     [
+      12,
+      1.754,
+      "zc"
+     ],
+     "door wall ceiling"
+    ],
+    [
+     1000,
+     121.7,
+     [
+      0,
+      1.754,
+      "zc"
+     ],
+     [
+      12,
+      1.754,
+      "zc"
+     ],
+     "door wall ceiling"
+    ],
+    [
+     1100,
+     122.2,
+     [
+      0,
+      1.754,
+      "zc"
+     ],
+     [
+      12,
+      1.754,
+      "zc"
+     ],
+     "door wall ceiling"
+    ],
+    [
+     1200,
+     122.4,
+     [
+      0,
+      1.754,
+      "zc"
+     ],
+     [
+      12,
+      1.754,
+      "zc"
+     ],
+     "door wall ceiling"
+    ],
+    [
+     860,
+     771.8,
+     [
+      0,
+      1.754,
+      0.0
+     ],
+     [
+      12,
+      1.754,
+      0.0
+     ],
+     "door wall floor"
+    ],
+    [
+     880,
+     771.5,
+     [
+      0,
+      1.754,
+      0.0
+     ],
+     [
+      12,
+      1.754,
+      0.0
+     ],
+     "door wall floor"
+    ],
+    [
+     860,
+     749.0,
+     [
+      0,
+      1.754,
+      "bb"
+     ],
+     [
+      12,
+      1.754,
+      "bb"
+     ],
+     "door wall bb top"
+    ],
+    [
+     880,
+     748.8,
+     [
+      0,
+      1.754,
+      "bb"
+     ],
+     [
+      12,
+      1.754,
+      "bb"
+     ],
+     "door wall bb top"
+    ],
+    [
+     60,
+     177.4,
+     [
+      0,
+      "yw",
+      "zc"
+     ],
+     [
+      12,
+      "yw",
+      "zc"
+     ],
+     "window wall ceiling"
+    ],
+    [
+     150,
+     177.8,
+     [
+      0,
+      "yw",
+      "zc"
+     ],
+     [
+      12,
+      "yw",
+      "zc"
+     ],
+     "window wall ceiling"
+    ],
+    [
+     400,
+     178.1,
+     [
+      0,
+      "yw",
+      "zc"
+     ],
+     [
+      12,
+      "yw",
+      "zc"
+     ],
+     "window wall ceiling"
+    ],
+    [
+     650,
+     178.1,
+     [
+      0,
+      "yw",
+      "zc"
+     ],
+     [
+      12,
+      "yw",
+      "zc"
+     ],
+     "window wall ceiling"
+    ],
+    [
+     800,
+     178.0,
+     [
+      0,
+      "yw",
+      "zc"
+     ],
+     [
+      12,
+      "yw",
+      "zc"
+     ],
+     "window wall ceiling"
+    ],
+    [
+     660,
+     728.8,
+     [
+      0,
+      "yw",
+      0.015
+     ],
+     [
+      12,
+      "yw",
+      0.015
+     ],
+     "window wall floor (carpet)"
+    ],
+    [
+     780,
+     728.8,
+     [
+      0,
+      "yw",
+      0.015
+     ],
+     [
+      12,
+      "yw",
+      0.015
+     ],
+     "window wall floor (carpet)"
+    ],
+    [
+     815,
+     728.8,
+     [
+      0,
+      "yw",
+      0.015
+     ],
+     [
+      12,
+      "yw",
+      0.015
+     ],
+     "window wall floor (carpet)"
+    ],
+    [
+     39.2,
+     178,
+     [
+      "xe",
+      "yw",
+      0
+     ],
+     [
+      "xe",
+      "yw",
+      2.5
+     ],
+     "E/window corner"
+    ],
+    [
+     39.9,
+     400,
+     [
+      "xe",
+      "yw",
+      0
+     ],
+     [
+      "xe",
+      "yw",
+      2.5
+     ],
+     "E/window corner"
+    ],
+    [
+     830,
+     300,
+     [
+      "xbw",
+      "yw",
+      0
+     ],
+     [
+      "xbw",
+      "yw",
+      2.5
+     ],
+     "bay-W return far edge"
+    ],
+    [
+     830,
+     600,
+     [
+      "xbw",
+      "yw",
+      0
+     ],
+     [
+      "xbw",
+      "yw",
+      2.5
+     ],
+     "bay-W return far edge"
+    ],
+    [
+     840.8,
+     125,
+     [
+      "xbw",
+      1.754,
+      0
+     ],
+     [
+      "xbw",
+      1.754,
+      2.5
+     ],
+     "door wall E end"
+    ],
+    [
+     837.9,
+     768,
+     [
+      "xbw",
+      1.754,
+      0
+     ],
+     [
+      "xbw",
+      1.754,
+      2.5
+     ],
+     "door wall E end"
+    ],
+    [
+     1293.5,
+     125,
+     [
+      "xfw",
+      1.754,
+      0
+     ],
+     [
+      "xfw",
+      1.754,
+      2.5
+     ],
+     "foyer W corner"
+    ],
+    [
+     1290.2,
+     768,
+     [
+      "xfw",
+      1.754,
+      0
+     ],
+     [
+      "xfw",
+      1.754,
+      2.5
+     ],
+     "foyer W corner"
+    ],
+    [
+     1310,
+     782.0,
+     [
+      "xfw",
+      0,
+      0.0
+     ],
+     [
+      "xfw",
+      12,
+      0.0
+     ],
+     "foyer W wall floor"
+    ],
+    [
+     1340,
+     796.8,
+     [
+      "xfw",
+      0,
+      0.0
+     ],
+     [
+      "xfw",
+      12,
+      0.0
+     ],
+     "foyer W wall floor"
+    ],
+    [
+     1370,
+     812.2,
+     [
+      "xfw",
+      0,
+      0.0
+     ],
+     [
+      "xfw",
+      12,
+      0.0
+     ],
+     "foyer W wall floor"
+    ],
+    [
+     1400,
+     827.2,
+     [
+      "xfw",
+      0,
+      0.0
+     ],
+     [
+      "xfw",
+      12,
+      0.0
+     ],
+     "foyer W wall floor"
+    ]
+   ]
+  },
+  "06": {
+   "size": [
+    1536,
+    1024
+   ],
+   "model": "level",
+   "photo": "../photos/06.jpg",
+   "init": {
+    "loc": [
+     7.8,
+     2.2,
+     1.08
+    ],
+    "yaw": 62,
+    "lens": 16.5
+   },
+   "priors": {
+    "shift_x": [
+     0,
+     0.03
+    ]
+   },
+   "points": [],
+   "lines": [
+    [
+     720,
+     289.6,
+     [
+      "xe",
+      0,
+      "zc"
+     ],
+     [
+      "xe",
+      12,
+      "zc"
+     ],
+     "E wall ceiling"
+    ],
+    [
+     800,
+     277.7,
+     [
+      "xe",
+      0,
+      "zc"
+     ],
+     [
+      "xe",
+      12,
+      "zc"
+     ],
+     "E wall ceiling"
+    ],
+    [
+     900,
+     263.7,
+     [
+      "xe",
+      0,
+      "zc"
+     ],
+     [
+      "xe",
+      12,
+      "zc"
+     ],
+     "E wall ceiling"
+    ],
+    [
+     1000,
+     248.6,
+     [
+      "xe",
+      0,
+      "zc"
+     ],
+     [
+      "xe",
+      12,
+      "zc"
+     ],
+     "E wall ceiling"
+    ],
+    [
+     1100,
+     233.9,
+     [
+      "xe",
+      0,
+      "zc"
+     ],
+     [
+      "xe",
+      12,
+      "zc"
+     ],
+     "E wall ceiling"
+    ],
+    [
+     1200,
+     218.7,
+     [
+      "xe",
+      0,
+      "zc"
+     ],
+     [
+      "xe",
+      12,
+      "zc"
+     ],
+     "E wall ceiling"
+    ],
+    [
+     1300,
+     203.6,
+     [
+      "xe",
+      0,
+      "zc"
+     ],
+     [
+      "xe",
+      12,
+      "zc"
+     ],
+     "E wall ceiling"
+    ],
+    [
+     1370,
+     193.3,
+     [
+      "xe",
+      0,
+      "zc"
+     ],
+     [
+      "xe",
+      12,
+      "zc"
+     ],
+     "E wall ceiling"
+    ],
+    [
+     698.3,
+     300,
+     [
+      "xe",
+      "yf",
+      0
+     ],
+     [
+      "xe",
+      "yf",
+      2.5
+     ],
+     "E/fruit corner"
+    ],
+    [
+     698.3,
+     350,
+     [
+      "xe",
+      "yf",
+      0
+     ],
+     [
+      "xe",
+      "yf",
+      2.5
+     ],
+     "E/fruit corner"
+    ],
+    [
+     698.9,
+     450,
+     [
+      "xe",
+      "yf",
+      0
+     ],
+     [
+      "xe",
+      "yf",
+      2.5
+     ],
+     "E/fruit corner"
+    ],
+    [
+     605,
+     255.3,
+     [
+      0,
+      "yf",
+      "zc"
+     ],
+     [
+      12,
+      "yf",
+      "zc"
+     ],
+     "fruit ceiling"
+    ],
+    [
+     615,
+     255.6,
+     [
+      0,
+      "yf",
+      "zc"
+     ],
+     [
+      12,
+      "yf",
+      "zc"
+     ],
+     "fruit ceiling"
+    ],
+    [
+     625,
+     259.8,
+     [
+      0,
+      "yf",
+      "zc"
+     ],
+     [
+      12,
+      "yf",
+      "zc"
+     ],
+     "fruit ceiling"
+    ],
+    [
+     635,
+     264.8,
+     [
+      0,
+      "yf",
+      "zc"
+     ],
+     [
+      12,
+      "yf",
+      "zc"
+     ],
+     "fruit ceiling"
+    ],
+    [
+     645,
+     271.4,
+     [
+      0,
+      "yf",
+      "zc"
+     ],
+     [
+      12,
+      "yf",
+      "zc"
+     ],
+     "fruit ceiling"
+    ],
+    [
+     655,
+     271.5,
+     [
+      0,
+      "yf",
+      "zc"
+     ],
+     [
+      12,
+      "yf",
+      "zc"
+     ],
+     "fruit ceiling"
+    ],
+    [
+     665,
+     282.9,
+     [
+      0,
+      "yf",
+      "zc"
+     ],
+     [
+      12,
+      "yf",
+      "zc"
+     ],
+     "fruit ceiling"
+    ],
+    [
+     675,
+     283.1,
+     [
+      0,
+      "yf",
+      "zc"
+     ],
+     [
+      12,
+      "yf",
+      "zc"
+     ],
+     "fruit ceiling"
+    ],
+    [
+     685,
+     287.5,
+     [
+      0,
+      "yf",
+      "zc"
+     ],
+     [
+      12,
+      "yf",
+      "zc"
+     ],
+     "fruit ceiling"
+    ],
+    [
+     692,
+     289.8,
+     [
+      0,
+      "yf",
+      "zc"
+     ],
+     [
+      12,
+      "yf",
+      "zc"
+     ],
+     "fruit ceiling"
+    ],
+    [
+     640,
+     636.2,
+     [
+      0,
+      "yf",
+      "bb"
+     ],
+     [
+      12,
+      "yf",
+      "bb"
+     ],
+     "fruit bb top"
+    ],
+    [
+     655,
+     631.9,
+     [
+      0,
+      "yf",
+      "bb"
+     ],
+     [
+      12,
+      "yf",
+      "bb"
+     ],
+     "fruit bb top"
+    ],
+    [
+     670,
+     627.3,
+     [
+      0,
+      "yf",
+      "bb"
+     ],
+     [
+      12,
+      "yf",
+      "bb"
+     ],
+     "fruit bb top"
+    ],
+    [
+     625,
+     654.8,
+     [
+      0,
+      "yf",
+      0.015
+     ],
+     [
+      12,
+      "yf",
+      0.015
+     ],
+     "fruit floor (carpet)"
+    ],
+    [
+     640,
+     649.6,
+     [
+      0,
+      "yf",
+      0.015
+     ],
+     [
+      12,
+      "yf",
+      0.015
+     ],
+     "fruit floor (carpet)"
+    ],
+    [
+     1392,
+     180,
+     [
+      0,
+      "yw",
+      "zc"
+     ],
+     [
+      12,
+      "yw",
+      "zc"
+     ],
+     "window wall ceiling"
+    ],
+    [
+     1410,
+     160,
+     [
+      0,
+      "yw",
+      "zc"
+     ],
+     [
+      12,
+      "yw",
+      "zc"
+     ],
+     "window wall ceiling"
+    ],
+    [
+     1426,
+     140,
+     [
+      0,
+      "yw",
+      "zc"
+     ],
+     [
+      12,
+      "yw",
+      "zc"
+     ],
+     "window wall ceiling"
+    ],
+    [
+     595.2,
+     300,
+     [
+      "xf0",
+      "yf",
+      0
+     ],
+     [
+      "xf0",
+      "yf",
+      2.5
+     ],
+     "fruit W end"
+    ],
+    [
+     595.4,
+     330,
+     [
+      "xf0",
+      "yf",
+      0
+     ],
+     [
+      "xf0",
+      "yf",
+      2.5
+     ],
+     "fruit W end"
+    ],
+    [
+     595.2,
+     360,
+     [
+      "xf0",
+      "yf",
+      0
+     ],
+     [
+      "xf0",
+      "yf",
+      2.5
+     ],
+     "fruit W end"
+    ],
+    [
+     209.5,
+     350,
+     [
+      "pdx1",
+      "pwy",
+      0
+     ],
+     [
+      "pdx1",
+      "pwy",
+      2.4
+     ],
+     "powder door casing E outer"
+    ],
+    [
+     209.5,
+     450,
+     [
+      "pdx1",
+      "pwy",
+      0
+     ],
+     [
+      "pdx1",
+      "pwy",
+      2.4
+     ],
+     "powder door casing E outer"
+    ],
+    [
+     209.5,
+     550,
+     [
+      "pdx1",
+      "pwy",
+      0
+     ],
+     [
+      "pdx1",
+      "pwy",
+      2.4
+     ],
+     "powder door casing E outer"
+    ],
+    [
+     209.5,
+     650,
+     [
+      "pdx1",
+      "pwy",
+      0
+     ],
+     [
+      "pdx1",
+      "pwy",
+      2.4
+     ],
+     "powder door casing E outer"
+    ],
+    [
+     130,
+     726.4,
+     [
+      0,
+      "pwy",
+      0.01
+     ],
+     [
+      14,
+      "pwy",
+      0.01
+     ],
+     "powder door bottom"
+    ],
+    [
+     160,
+     719.4,
+     [
+      0,
+      "pwy",
+      0.01
+     ],
+     [
+      14,
+      "pwy",
+      0.01
+     ],
+     "powder door bottom"
+    ],
+    [
+     190,
+     713.2,
+     [
+      0,
+      "pwy",
+      0.01
+     ],
+     [
+      14,
+      "pwy",
+      0.01
+     ],
+     "powder door bottom"
+    ]
+   ]
+  },
+  "05": {
+   "size": [
+    1536,
+    1024
+   ],
+   "model": "level",
+   "photo": "../photos/05.jpg",
+   "init": {
+    "loc": [
+     11.8,
+     1.6,
+     1.1
+    ],
+    "yaw": -40,
+    "lens": 16.5
+   },
+   "priors": {
+    "shift_x": [
+     0,
+     0.03
+    ]
+   },
+   "points": [],
+   "lines": [
+    [
+     1140,
+     191.2,
+     [
+      0,
+      "yf",
+      "zc"
+     ],
+     [
+      12,
+      "yf",
+      "zc"
+     ],
+     "fruit ceiling"
+    ],
+    [
+     1200,
+     175.5,
+     [
+      0,
+      "yf",
+      "zc"
+     ],
+     [
+      12,
+      "yf",
+      "zc"
+     ],
+     "fruit ceiling"
+    ],
+    [
+     1260,
+     164.8,
+     [
+      0,
+      "yf",
+      "zc"
+     ],
+     [
+      12,
+      "yf",
+      "zc"
+     ],
+     "fruit ceiling"
+    ],
+    [
+     1320,
+     152.0,
+     [
+      0,
+      "yf",
+      "zc"
+     ],
+     [
+      12,
+      "yf",
+      "zc"
+     ],
+     "fruit ceiling"
+    ],
+    [
+     1380,
+     139.1,
+     [
+      0,
+      "yf",
+      "zc"
+     ],
+     [
+      12,
+      "yf",
+      "zc"
+     ],
+     "fruit ceiling"
+    ],
+    [
+     1440,
+     126.9,
+     [
+      0,
+      "yf",
+      "zc"
+     ],
+     [
+      12,
+      "yf",
+      "zc"
+     ],
+     "fruit ceiling"
+    ],
+    [
+     1480,
+     116.7,
+     [
+      0,
+      "yf",
+      "zc"
+     ],
+     [
+      12,
+      "yf",
+      "zc"
+     ],
+     "fruit ceiling"
+    ],
+    [
+     1124.9,
+     200,
+     [
+      "xf0",
+      "yf",
+      0
+     ],
+     [
+      "xf0",
+      "yf",
+      2.5
+     ],
+     "fruit W end"
+    ],
+    [
+     1122.4,
+     250,
+     [
+      "xf0",
+      "yf",
+      0
+     ],
+     [
+      "xf0",
+      "yf",
+      2.5
+     ],
+     "fruit W end"
+    ],
+    [
+     1510.5,
+     150,
+     [
+      "xe",
+      "yf",
+      0
+     ],
+     [
+      "xe",
+      "yf",
+      2.5
+     ],
+     "E/fruit corner"
+    ],
+    [
+     1507.8,
+     250,
+     [
+      "xe",
+      "yf",
+      0
+     ],
+     [
+      "xe",
+      "yf",
+      2.5
+     ],
+     "E/fruit corner"
+    ],
+    [
+     1508.1,
+     450,
+     [
+      "xe",
+      "yf",
+      0
+     ],
+     [
+      "xe",
+      "yf",
+      2.5
+     ],
+     "E/fruit corner"
+    ],
+    [
+     1050,
+     758.2,
+     [
+      0,
+      "yf",
+      0.015
+     ],
+     [
+      12,
+      "yf",
+      0.015
+     ],
+     "yf floor (carpet)"
+    ],
+    [
+     1070,
+     762.1,
+     [
+      0,
+      "yf",
+      0.015
+     ],
+     [
+      12,
+      "yf",
+      0.015
+     ],
+     "yf floor (carpet)"
+    ],
+    [
+     1090,
+     765.9,
+     [
+      0,
+      "yf",
+      0.015
+     ],
+     [
+      12,
+      "yf",
+      0.015
+     ],
+     "yf floor (carpet)"
+    ],
+    [
+     1105,
+     768.7,
+     [
+      0,
+      "yf",
+      0.015
+     ],
+     [
+      12,
+      "yf",
+      0.015
+     ],
+     "yf floor (carpet)"
+    ],
+    [
+     1050,
+     739.0,
+     [
+      0,
+      "yf",
+      "bb"
+     ],
+     [
+      12,
+      "yf",
+      "bb"
+     ],
+     "yf bb top"
+    ],
+    [
+     1070,
+     742.6,
+     [
+      0,
+      "yf",
+      "bb"
+     ],
+     [
+      12,
+      "yf",
+      "bb"
+     ],
+     "yf bb top"
+    ],
+    [
+     1090,
+     745.8,
+     [
+      0,
+      "yf",
+      "bb"
+     ],
+     [
+      12,
+      "yf",
+      "bb"
+     ],
+     "yf bb top"
+    ],
+    [
+     1105,
+     748.4,
+     [
+      0,
+      "yf",
+      "bb"
+     ],
+     [
+      12,
+      "yf",
+      "bb"
+     ],
+     "yf bb top"
+    ],
+    [
+     100,
+     218.9,
+     [
+      "xfw",
+      0,
+      "zc"
+     ],
+     [
+      "xfw",
+      12,
+      "zc"
+     ],
+     "foyer W ceiling"
+    ],
+    [
+     200,
+     243.2,
+     [
+      "xfw",
+      0,
+      "zc"
+     ],
+     [
+      "xfw",
+      12,
+      "zc"
+     ],
+     "foyer W ceiling"
+    ],
+    [
+     300,
+     271.7,
+     [
+      "xfw",
+      0,
+      "zc"
+     ],
+     [
+      "xfw",
+      12,
+      "zc"
+     ],
+     "foyer W ceiling"
+    ],
+    [
+     380,
+     292.5,
+     [
+      "xfw",
+      0,
+      "zc"
+     ],
+     [
+      "xfw",
+      12,
+      "zc"
+     ],
+     "foyer W ceiling"
+    ],
+    [
+     423.3,
+     330,
+     [
+      "xfw",
+      "ycn",
+      0
+     ],
+     [
+      "xfw",
+      "ycn",
+      2.5
+     ],
+     "foyer W wall N end"
+    ],
+    [
+     422.4,
+     450,
+     [
+      "xfw",
+      "ycn",
+      0
+     ],
+     [
+      "xfw",
+      "ycn",
+      2.5
+     ],
+     "foyer W wall N end"
+    ],
+    [
+     756.5,
+     450,
+     [
+      "pdx0",
+      "pwy",
+      0
+     ],
+     [
+      "pdx0",
+      "pwy",
+      2.4
+     ],
+     "powder door casing W outer"
+    ],
+    [
+     756.5,
+     550,
+     [
+      "pdx0",
+      "pwy",
+      0
+     ],
+     [
+      "pdx0",
+      "pwy",
+      2.4
+     ],
+     "powder door casing W outer"
+    ],
+    [
+     756.5,
+     600,
+     [
+      "pdx0",
+      "pwy",
+      0
+     ],
+     [
+      "pdx0",
+      "pwy",
+      2.4
+     ],
+     "powder door casing W outer"
+    ],
+    [
+     775,
+     658.8,
+     [
+      0,
+      "pwy",
+      0.01
+     ],
+     [
+      14,
+      "pwy",
+      0.01
+     ],
+     "powder door bottom"
+    ],
+    [
+     800,
+     662.2,
+     [
+      0,
+      "pwy",
+      0.01
+     ],
+     [
+      14,
+      "pwy",
+      0.01
+     ],
+     "powder door bottom"
+    ]
+   ]
+  }
+ }
+}

@@ -1,0 +1,140 @@
+{
+  "schema_version": 1,
+  "title": "13695 Stanford Drive | Matched Cinematic Walkthrough",
+  "source": "output/matched/delivery/stanford_matched_1080p.mp4",
+  "gallery": "output/final_v2/gallery",
+  "fps": 24,
+  "frames": 1921,
+  "source_size": [
+    1920,
+    1080
+  ],
+  "output_size": [
+    1920,
+    1800
+  ],
+  "timing_note": "The 20 sections, switch frames, photo choices and titles of the independent reconstruction's houses/stanford/cinematic_comparison_timeline.json, so the two comparison movies change pairs on the same frames. Pairs follow the visible room or feature; static reference cameras are not registered to the moving film camera. The gallery covers all 32 references.",
+  "provenance": "Unchanged Stanford photos 01-32 and this repository's accepted 2026-09-24 photo-camera renders (output/final_v2/gallery). The film re-authors the other reconstruction's 80-second route in this model in the listing-photo daylight; the entry, powder and slider door motions are cinematic staging. The 2026-09-25 render used the other film's original procedural score (its houses/stanford/score.py, seed 13695), which is not included here.",
+  "segments": [
+    {
+      "start_frame": 0,
+      "photo": 30,
+      "title": "Aerial arrival",
+      "review_time": 2.0
+    },
+    {
+      "start_frame": 96,
+      "photo": 1,
+      "title": "Front elevation",
+      "review_time": 5.5
+    },
+    {
+      "start_frame": 192,
+      "photo": 3,
+      "title": "Porch and arrival",
+      "review_time": 9.0
+    },
+    {
+      "start_frame": 288,
+      "photo": 5,
+      "title": "Salon and oak stair",
+      "review_time": 13.0
+    },
+    {
+      "start_frame": 360,
+      "photo": 6,
+      "title": "Oak stair and salon",
+      "review_time": 16.5
+    },
+    {
+      "start_frame": 480,
+      "photo": 15,
+      "title": "Stair landing",
+      "review_time": 22.0
+    },
+    {
+      "start_frame": 648,
+      "photo": 16,
+      "title": "Primary retreat",
+      "review_time": 29.5
+    },
+    {
+      "start_frame": 768,
+      "photo": 17,
+      "title": "Primary suite reverse",
+      "review_time": 33.0
+    },
+    {
+      "start_frame": 840,
+      "photo": 15,
+      "title": "Stair landing",
+      "review_time": 40.5
+    },
+    {
+      "start_frame": 1116,
+      "photo": 4,
+      "title": "Foyer and salon",
+      "review_time": 47.0
+    },
+    {
+      "start_frame": 1176,
+      "photo": 5,
+      "title": "Salon and oak stair",
+      "review_time": 50.0
+    },
+    {
+      "start_frame": 1272,
+      "photo": 11,
+      "title": "Dining room",
+      "review_time": 53.5
+    },
+    {
+      "start_frame": 1320,
+      "photo": 9,
+      "title": "Great room and fireplace",
+      "review_time": 56.0
+    },
+    {
+      "start_frame": 1404,
+      "photo": 11,
+      "title": "Dining room",
+      "review_time": 59.0
+    },
+    {
+      "start_frame": 1452,
+      "photo": 13,
+      "title": "Oak kitchen and appliances",
+      "review_time": 62.0
+    },
+    {
+      "start_frame": 1524,
+      "photo": 12,
+      "title": "Kitchen sink and range",
+      "review_time": 64.0
+    },
+    {
+      "start_frame": 1584,
+      "photo": 26,
+      "title": "Patio and pond view",
+      "review_time": 68.5
+    },
+    {
+      "start_frame": 1728,
+      "photo": 28,
+      "title": "Rear patio",
+      "review_time": 73.0
+    },
+    {
+      "start_frame": 1776,
+      "photo": 27,
+      "title": "Rear garden from above",
+      "review_time": 75.0
+    },
+    {
+      "start_frame": 1848,
+      "photo": 30,
+      "title": "Aerial arrival",
+      "review_time": 79.0
+    }
+  ]
+}
